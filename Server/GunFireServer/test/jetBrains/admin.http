@@ -1,0 +1,19 @@
+### 登录请求
+POST{{baseUrl}}base/login
+Content-Type:application/json
+
+{
+    "username":"admin_req",
+    "password":"123456"
+}
+
+> {% client.global.set("token", response.body.data.token); %}
+
+### 获取管理员信息
+GET {{baseUrl}}admin/info
+X-Token: {{token}}
+
+### 获取用户列表
+### GET {{baseUrl}}users/list?type=1&time=2020-09-24
+GET {{baseUrl}}users/list?type=2&time=2020-09-24&start=2020-09-24&end=2020-09-25
+X-Token: {{token}}

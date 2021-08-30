@@ -1,0 +1,115 @@
+获取背包中的卡片数据 :
+    MsgId: 140010
+    响应:   Array list
+        [{"tabId":"card001_8","num":10000},{"tabId":"card001_9","num":10000}]
+
+    示例: {"msgId":140010,"data":{"code":200,"data":[{"tabId":"card001_8","num":10000},{"tabId":"card001_9","num":10000},{"num":10000,"tabId":"card008_1"},{"tabId":"card012_3","num":10000},{"num":10000,"tabId":"card001_6"},{"num":10000,"tabId":"card009_1"},{"tabId":"card013_1","num":10000},{"num":10000,"tabId":"card014_4"},{"tabId":"card014_5","num":10000},{"num":10000,"tabId":"card004_1"},{"num":10000,"tabId":"card006_3"},{"tabId":"card012_1","num":10000},{"tabId":"card012_2","num":10000},{"tabId":"card013_5","num":10000},{"num":10000,"tabId":"card006_1"},{"tabId":"card010_2","num":10000},{"tabId":"card011_1","num":10000},{"tabId":"card011_2","num":10000},{"tabId":"card011_3","num":10000},{"tabId":"card013_3","num":10000},{"tabId":"card007_1","num":10000},{"tabId":"card006_4","num":10000},{"tabId":"card010_3","num":10000},{"tabId":"card011_4","num":10000},{"tabId":"card001_7","num":10000},{"tabId":"card010_4","num":10000},{"tabId":"card012_5","num":10000},{"tabId":"card013_4","num":10000},{"tabId":"card014_2","num":10000},{"tabId":"card001_5","num":10000},{"tabId":"card001_2","num":10000},{"tabId":"card001_3","num":10000},{"num":10000,"tabId":"card005_1"},{"tabId":"card010_1","num":10000},{"tabId":"card011_5","num":10000},{"tabId":"card012_4","num":10000},{"tabId":"card014_1","num":10000},{"tabId":"card001_1","num":10000},{"tabId":"card002_1","num":10000},{"tabId":"card003_1","num":10000},{"tabId":"card006_2","num":10000},{"num":10000,"tabId":"card010_5"},{"tabId":"card013_2","num":10000},{"tabId":"card014_3","num":10000},{"tabId":"card001_4","num":10000}]}}
+
+
+使用经验升级卡 :
+    MsgId: 140020
+    请求: {"card001_8":10000,"card001_9":10000}
+    响应:   Array list
+         {"card001_8":10000,"card001_9":10000}
+
+    示例: {"msgId":140010,"data": {"card001_8":10000,"card001_9":10000}}
+
+
+角色升级推送
+    msgId: 1101
+    数据结构:
+        type LevelUpgradeNoticeData struct {
+            Lv   int `json:"lv"`   // 账号等级
+            Exp  int `json:"exp"`  // 账号经验
+            RLv  int `json:"rLv"`  // 角色等级
+            RExp int `json:"rExp"` // 角色经验
+        }
+
+英雄升星升级,技能升级等:
+    返回结构修改:
+    {
+    	"hero": heroModel, // 原来的结构不变
+    	"card": {itemId: num},
+    }
+
+玩家获取所有关卡记录 :
+    msgId : 104050
+    请求数据: null
+    响应结构:
+
+    // Stage 关卡
+    type StageModel struct {
+        Uid            int            `json:"uid"            bson:"uid"`
+        StageMain      *StageMain     `json:"stageMain"      bson:"stageMain"`
+        ChallengeStage *ActiveStage   `json:"challengeStage" bson:"challengeStage"` // 挑战
+        DefenseStage   *ActiveStage   `json:"defenseStage"   bson:"defenseStage"`   // 营地防守
+        GoldStage      *ActiveStage   `json:"goldStage"      bson:"goldStage"`      // 金币
+        ResourceStage  *ResourceStage `json:"resourceStage"  bson:"resourceStage"`  // 资源
+        EndlessStage   *EndlessStage  `json:"endlessStage"   bson:"endlessStage"`   // 无尽
+    }
+    // 主线关卡(简单和困难)
+    type StageMain struct {
+    	GeneralStage   string `json:"generalStage"   bson:"generalStage"`   // 普通主线任务
+    	DifficultStage string `json:"difficultStage" bson:"difficultStage"` // 困难主线任务
+    	StageType      int8   `json:"stageType"      bson:"stageType"`      // 当前选择的关卡模式  0:简单 1:困难
+    }
+
+   // 普通活动关卡
+    type ActiveStage struct {
+        Ti  int `json:"time"`
+        Num int `json:"num"`  // 剩余次数
+    }
+    // 资源关卡
+    type ResourceStage struct {
+        Ti         int `json:"time"`       // 时间(当前时间与这个时间相差一天,这个次数重置)
+        Num        int `json:"num"`        // 剩余次数
+        Difficulty int `json:"difficulty"` // 难度 1 - 5
+    }
+    // 无尽关卡
+    type EndlessStage struct {
+    	Ti         int `json:"time"       bson:"time"`
+    	Num        int `json:"num"        bson:"num"`        // 剩余次数
+    	Monster    int `json:"monster"    bson:"monster"`    // 本月怪物累计
+    	MonsterNum int `json:"monsterNum" bson:"monsterNum"` // 上一次失败的怪物波数
+    }
+
+
+    响应数据示例 :{"msgId":104050,"data":{"data":{"endlessStage":{"time":0,"num":1,"monster":0,"monsterNum":0},"uid":14,"stageMain":{"generalStage":"level001","difficultStage":"level001","stageType":0},"challengeStage":{"time":0,"num":1},"defenseStage":{"time":0,"num":1},"goldStage":{"time":0,"num":0},"resourceStage":{"time":0,"num":2,"difficulty":0}},"code":200}}
+
+
+
+
+获取商品列表:
+    msgId : 130130
+    请求数据: null
+    响应结构:
+    type GoodsDataConfig struct {
+    	Id          string `xlsx:"id"           bson:"id"`           //商品ID
+    	Ty          int    `xlsx:"type"         bson:"des"`          //商品
+    	Price       int    `xlsx:"price"        bson:"price"`        //价格
+    	ActivePrice int    `xlsx:"active_price"  bson:"activePrice"` //活动价格
+    	Count       int    `xlsx:"count"        bson:"count"`        //数量
+    	Icon        string `xlsx:"icon"         bson:"icon"`         //资源icon
+    	Discount    int    `xlsx:"discount"     bson:"discount"`     //活动赠送数量
+    	ActiveStart int    `xlsx:"active_start"  bson:"activeStart"` //活动开始时间
+    	ActiveEnd   int    `xlsx:"active_end"  bson:"activeEnd"`     //活动结束时间
+    }
+
+    type ChestDataConfig struct {
+    	Id          string `xlsx:"id"`           // 宝箱id
+    	Ty          int    `xlsx:"type"`         // 类型
+    	Des         string `xlsx:"des"`          // 宝箱描述
+    	OpenOne     int    `xlsx:"open_one"`     // 开宝箱一次消耗
+    	AcOpenOne   int    `xlsx:"ac_open_one"`  // 活动开宝箱一次消耗
+    	OpenTen     int    `xlsx:"open_ten"`     // 开宝箱十次消耗
+    	AcOpenTen   int    `xlsx:"ac_open_ten"`  // 活动开宝箱十次消耗
+    	TimeLimit   int    `xlsx:"timelimit"`    // 免费开箱倒计时（分）
+    	LimitCount  int    `xlsx:"limitcount"`   // 连续开箱必得上限
+    	RewardId    string `xlsx:"rewardid"`     // 连抽必中奖励id
+    	ActiveStart int    `xlsx:"active_start"` // 活动开始时间
+    	ActiveEnd   int    `xlsx:"active_end"`   // 活动结束时间
+    }
+
+    示例:
+    {"code":200,"data":{"chests":{"treasurebox001":{"AcOpenOne":9,"TimeLimit":20,"ActiveStart":1625068800,"Ty":4,"Des":"材料宝箱","OpenOne":10,"OpenTen":99,"AcOpenTen":90,"LimitCount":50,"RewardId":"reward30001","ActiveEnd":1627574400,"Id":"treasurebox001"},"treasurebox002":{"Ty":5,"OpenOne":10,"AcOpenTen":90,"TimeLimit":100,"RewardId":"reward30001","ActiveStart":1625068800,"Id":"treasurebox002","Des":"武器宝箱","AcOpenOne":9,"OpenTen":99,"LimitCount":50,"ActiveEnd":1627574400},"treasurebox003":{"Ty":6,"Des":"装备宝箱","AcOpenOne":9,"OpenTen":99,"AcOpenTen":90,"TimeLimit":1000,"LimitCount":50,"Id":"treasurebox003","ActiveStart":1625068800,"RewardId":"reward30001","ActiveEnd":1627574400,"OpenOne":10},"treasurebox004":{"AcOpenTen":90,"TimeLimit":1000,"RewardId":"reward30001","Id":"treasurebox004","Des":"英雄宝箱","OpenOne":10,"AcOpenOne":9,"OpenTen":99,"ActiveStart":0,"ActiveEnd":0,"Ty":7,"LimitCount":50}},"goods":{"glod_2":{"Id":"glod_2","Ty":1,"ActivePrice":42,"Icon":"Shop_UI_Pic_01","ActiveEnd":1630252800,"Price":50,"Count":600000,"Discount":600000,"ActiveStart":1627833600},"diamond_5":{"Id":"diamond_5","Count":2550,"ActiveEnd":1630252800,"Ty":2,"Price":328,"ActivePrice":300,"Icon":"Shop_UI_Pic_04","Discount":50,"ActiveStart":1627833600},"diamond_1":{"Price":6,"ActivePrice":0,"Count":50,"Discount":0,"ActiveStart":1627833600,"ActiveEnd":1630252800,"Id":"diamond_1","Icon":"Shop_UI_Pic_00","Ty":2},"diamond_6":{"Id":"diamond_6","Ty":2,"Price":648,"ActivePrice":610,"ActiveEnd":1630252800,"Count":5400,"Icon":"Shop_UI_Pic_05","Discount":50,"ActiveStart":1627833600},"diamond_3":{"ActiveStart":1627833600,"ActiveEnd":1630252800,"Price":68,"Icon":"Shop_UI_Pic_02","Discount":50,"Count":600,"Id":"diamond_3","Ty":2,"ActivePrice":55},"glod_3":{"Price":100,"Count":1500000,"ActiveStart":1627833600,"ActiveEnd":1630252800,"Discount":1500000,"Id":"glod_3","Ty":1,"ActivePrice":80,"Icon":"Shop_UI_Pic_02"},"strength_1":{"Count":10,"Discount":0,"Id":"strength_1","Price":20,"Icon":"Shop_UI_Pic_00","ActiveStart":1627833600,"ActiveEnd":1630252800,"Ty":3,"ActivePrice":0},"glod_1":{"Ty":1,"ActivePrice":8,"Icon":"Shop_UI_Pic_00","ActiveStart":1627833600,"ActiveEnd":1630252800,"Id":"glod_1","Price":10,"Count":100000,"Discount":100000},"diamond_2":{"Count":280,"Icon":"Shop_UI_Pic_01","ActiveStart":1627833600,"ActiveEnd":1630252800,"Discount":50,"Id":"diamond_2","Ty":2,"Price":30,"ActivePrice":25},"diamond_4":{"Price":128,"ActivePrice":110,"Count":1150,"Icon":"Shop_UI_Pic_03","Discount":50,"ActiveEnd":1630252800,"Id":"diamond_4","Ty":2,"ActiveStart":1627833600}}}}
+

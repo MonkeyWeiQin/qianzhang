@@ -1,0 +1,218 @@
+2021-08-12 10:00:42 [WARN] [D:/project/go/BattleRabbit/Server/battle_rabbit/network/agent.go:98] ReadLoop ::  EOF
+2021-08-12 10:04:09 [WARN] [D:/project/go/BattleRabbit/Server/battle_rabbit/network/agent.go:98] ReadLoop ::  EOF
+2021-08-12 10:04:18 [WARN] [D:/project/go/BattleRabbit/Server/battle_rabbit/network/agent.go:98] ReadLoop ::  read tcp 192.168.0.44:19010->192.168.0.97:46318: wsarecv: An existing connection was forcibly closed by the remote host.
+2021-08-12 10:20:29 [WARN] [D:/project/go/BattleRabbit/Server/battle_rabbit/network/agent.go:98] ReadLoop ::  EOF
+2021-08-12 10:28:00 [WARN] [D:/project/go/BattleRabbit/Server/battle_rabbit/network/agent.go:98] ReadLoop ::  EOF
+2021-08-12 10:29:11 [WARN] [D:/project/go/BattleRabbit/Server/battle_rabbit/network/agent.go:98] ReadLoop ::  read tcp 192.168.0.44:19010->192.168.0.97:50330: wsarecv: An existing connection was forcibly closed by the remote host.
+2021-08-12 10:31:59 [WARN] [D:/project/go/BattleRabbit/Server/battle_rabbit/network/agent.go:98] ReadLoop ::  EOF
+2021-08-12 10:32:09 [WARN] [D:/project/go/BattleRabbit/Server/battle_rabbit/network/agent.go:98] ReadLoop ::  EOF
+2021-08-12 10:35:52 [WARN] [D:/project/go/BattleRabbit/Server/battle_rabbit/network/agent.go:98] ReadLoop ::  EOF
+2021-08-12 10:40:19 [WARN] [D:/project/go/BattleRabbit/Server/battle_rabbit/network/agent.go:98] ReadLoop ::  EOF
+2021-08-12 10:40:48 [WARN] [D:/project/go/BattleRabbit/Server/battle_rabbit/network/agent.go:98] ReadLoop ::  EOF
+2021-08-12 10:42:44 [WARN] [D:/project/go/BattleRabbit/Server/battle_rabbit/network/agent.go:98] ReadLoop ::  EOF
+2021-08-12 10:48:20 [WARN] [D:/project/go/BattleRabbit/Server/battle_rabbit/network/agent.go:98] ReadLoop ::  EOF
+2021-08-12 10:50:16 [WARN] [D:/project/go/BattleRabbit/Server/battle_rabbit/network/agent.go:98] ReadLoop ::  EOF
+2021-08-12 10:51:29 [WARN] [D:/project/go/BattleRabbit/Server/battle_rabbit/network/agent.go:98] ReadLoop ::  EOF
+2021-08-12 10:51:47 [WARN] [D:/project/go/BattleRabbit/Server/battle_rabbit/network/agent.go:98] ReadLoop ::  EOF
+2021-08-12 10:53:31 [WARN] [D:/project/go/BattleRabbit/Server/battle_rabbit/network/agent.go:98] ReadLoop ::  EOF
+2021-08-12 10:54:05 [WARN] [D:/project/go/BattleRabbit/Server/battle_rabbit/network/agent.go:98] ReadLoop ::  EOF
+2021-08-12 10:55:36 [WARN] [D:/project/go/BattleRabbit/Server/battle_rabbit/server/game/chest_handler.go:209] 宝石不足!!
+2021-08-12 10:55:47 [WARN] [D:/project/go/BattleRabbit/Server/battle_rabbit/network/agent.go:98] ReadLoop ::  EOF
+2021-08-12 10:56:24 [WARN] [D:/project/go/BattleRabbit/Server/battle_rabbit/network/agent.go:98] ReadLoop ::  EOF
+2021-08-12 10:56:38 [WARN] [D:/project/go/BattleRabbit/Server/battle_rabbit/network/agent.go:98] ReadLoop ::  EOF
+2021-08-12 11:01:21 [WARN] [D:/project/go/BattleRabbit/Server/battle_rabbit/network/agent.go:98] ReadLoop ::  EOF
+2021-08-12 11:02:37 [WARN] [D:/project/go/BattleRabbit/Server/battle_rabbit/network/agent.go:98] ReadLoop ::  EOF
+2021-08-12 11:02:57 [WARN] [D:/project/go/BattleRabbit/Server/battle_rabbit/network/agent.go:98] ReadLoop ::  EOF
+2021-08-12 11:06:55 [WARN] [D:/project/go/BattleRabbit/Server/battle_rabbit/network/agent.go:98] ReadLoop ::  EOF
+2021-08-12 11:10:37 [WARN] [D:/project/go/BattleRabbit/Server/battle_rabbit/network/agent.go:98] ReadLoop ::  EOF
+2021-08-12 11:12:37 [WARN] [D:/project/go/BattleRabbit/Server/battle_rabbit/network/agent.go:98] ReadLoop ::  EOF
+2021-08-12 11:15:00 [WARN] [D:/project/go/BattleRabbit/Server/battle_rabbit/network/agent.go:98] ReadLoop ::  EOF
+2021-08-12 11:20:00 [WARN] [D:/project/go/BattleRabbit/Server/battle_rabbit/network/agent.go:98] ReadLoop ::  EOF
+2021-08-12 11:25:38 [WARN] [D:/project/go/BattleRabbit/Server/battle_rabbit/network/agent.go:98] ReadLoop ::  EOF
+2021-08-12 11:26:18 [WARN] [D:/project/go/BattleRabbit/Server/battle_rabbit/network/agent.go:98] ReadLoop ::  EOF
+2021-08-12 11:30:28 [WARN] [D:/project/go/BattleRabbit/Server/battle_rabbit/network/agent.go:98] ReadLoop ::  EOF
+2021-08-12 11:32:18 [WARN] [D:/project/go/BattleRabbit/Server/battle_rabbit/network/agent.go:98] ReadLoop ::  EOF
+2021-08-12 11:32:31 [WARN] [D:/project/go/BattleRabbit/Server/battle_rabbit/network/agent.go:98] ReadLoop ::  EOF
+2021-08-12 11:33:22 [WARN] [D:/project/go/BattleRabbit/Server/battle_rabbit/network/agent.go:98] ReadLoop ::  EOF
+2021-08-12 11:34:18 [WARN] [D:/project/go/BattleRabbit/Server/battle_rabbit/network/agent.go:98] ReadLoop ::  EOF
+2021-08-12 11:35:24 [WARN] [D:/project/go/BattleRabbit/Server/battle_rabbit/network/agent.go:98] ReadLoop ::  EOF
+2021-08-12 11:35:52 [WARN] [D:/project/go/BattleRabbit/Server/battle_rabbit/network/agent.go:98] ReadLoop ::  EOF
+2021-08-12 11:36:06 [WARN] [D:/project/go/BattleRabbit/Server/battle_rabbit/network/agent.go:98] ReadLoop ::  EOF
+2021-08-12 11:36:48 [WARN] [D:/project/go/BattleRabbit/Server/battle_rabbit/network/agent.go:98] ReadLoop ::  EOF
+2021-08-12 11:37:01 [WARN] [D:/project/go/BattleRabbit/Server/battle_rabbit/network/agent.go:98] ReadLoop ::  EOF
+2021-08-12 11:37:52 [WARN] [D:/project/go/BattleRabbit/Server/battle_rabbit/network/agent.go:98] ReadLoop ::  EOF
+2021-08-12 11:38:04 [EROR] [D:/project/go/BattleRabbit/Server/battle_rabbit/server/game/hero_handler.go:148] <nil>
+2021-08-12 11:38:13 [WARN] [D:/project/go/BattleRabbit/Server/battle_rabbit/network/agent.go:98] ReadLoop ::  EOF
+2021-08-12 11:39:31 [WARN] [D:/project/go/BattleRabbit/Server/battle_rabbit/network/agent.go:98] ReadLoop ::  EOF
+2021-08-12 11:41:43 [WARN] [D:/project/go/BattleRabbit/Server/battle_rabbit/network/agent.go:98] ReadLoop ::  EOF
+2021-08-12 11:46:08 [WARN] [D:/project/go/BattleRabbit/Server/battle_rabbit/network/agent.go:98] ReadLoop ::  EOF
+2021-08-12 11:47:57 [WARN] [D:/project/go/BattleRabbit/Server/battle_rabbit/network/agent.go:98] ReadLoop ::  EOF
+2021-08-12 11:48:39 [WARN] [D:/project/go/BattleRabbit/Server/battle_rabbit/network/agent.go:98] ReadLoop ::  EOF
+2021-08-12 11:49:24 [WARN] [D:/project/go/BattleRabbit/Server/battle_rabbit/network/agent.go:98] ReadLoop ::  EOF
+2021-08-12 11:49:28 [WARN] [D:/project/go/BattleRabbit/Server/battle_rabbit/network/agent.go:98] ReadLoop ::  EOF
+2021-08-12 11:59:50 [WARN] [D:/project/go/BattleRabbit/Server/battle_rabbit/network/agent.go:98] ReadLoop ::  EOF
+2021-08-12 12:04:28 [WARN] [D:/project/go/BattleRabbit/Server/battle_rabbit/network/agent.go:98] ReadLoop ::  EOF
+2021-08-12 12:06:39 [WARN] [D:/project/go/BattleRabbit/Server/battle_rabbit/network/agent.go:98] ReadLoop ::  EOF
+2021-08-12 12:07:49 [WARN] [D:/project/go/BattleRabbit/Server/battle_rabbit/network/agent.go:98] ReadLoop ::  EOF
+2021-08-12 12:08:42 [WARN] [D:/project/go/BattleRabbit/Server/battle_rabbit/network/agent.go:98] ReadLoop ::  EOF
+2021-08-12 12:11:44 [WARN] [D:/project/go/BattleRabbit/Server/battle_rabbit/network/agent.go:98] ReadLoop ::  EOF
+2021-08-12 12:12:52 [WARN] [D:/project/go/BattleRabbit/Server/battle_rabbit/network/agent.go:98] ReadLoop ::  EOF
+2021-08-12 12:13:05 [WARN] [D:/project/go/BattleRabbit/Server/battle_rabbit/network/agent.go:98] ReadLoop ::  EOF
+2021-08-12 12:19:29 [WARN] [D:/project/go/BattleRabbit/Server/battle_rabbit/network/agent.go:98] ReadLoop ::  EOF
+2021-08-12 12:40:09 [WARN] [D:/project/go/BattleRabbit/Server/battle_rabbit/network/agent.go:98] ReadLoop ::  EOF
+2021-08-12 12:42:00 [WARN] [D:/project/go/BattleRabbit/Server/battle_rabbit/network/agent.go:98] ReadLoop ::  EOF
+2021-08-12 12:42:10 [WARN] [D:/project/go/BattleRabbit/Server/battle_rabbit/network/agent.go:98] ReadLoop ::  EOF
+2021-08-12 12:43:52 [WARN] [D:/project/go/BattleRabbit/Server/battle_rabbit/network/agent.go:98] ReadLoop ::  EOF
+2021-08-12 12:45:01 [WARN] [D:/project/go/BattleRabbit/Server/battle_rabbit/network/agent.go:98] ReadLoop ::  EOF
+2021-08-12 12:46:48 [WARN] [D:/project/go/BattleRabbit/Server/battle_rabbit/network/agent.go:98] ReadLoop ::  EOF
+2021-08-12 12:50:26 [WARN] [D:/project/go/BattleRabbit/Server/battle_rabbit/network/agent.go:98] ReadLoop ::  EOF
+2021-08-12 12:52:26 [WARN] [D:/project/go/BattleRabbit/Server/battle_rabbit/network/agent.go:98] ReadLoop ::  EOF
+2021-08-12 12:54:45 [WARN] [D:/project/go/BattleRabbit/Server/battle_rabbit/network/agent.go:98] ReadLoop ::  EOF
+2021-08-12 12:57:07 [WARN] [D:/project/go/BattleRabbit/Server/battle_rabbit/network/agent.go:98] ReadLoop ::  EOF
+2021-08-12 12:58:39 [WARN] [D:/project/go/BattleRabbit/Server/battle_rabbit/network/agent.go:98] ReadLoop ::  EOF
+2021-08-12 13:00:37 [WARN] [D:/project/go/BattleRabbit/Server/battle_rabbit/network/agent.go:98] ReadLoop ::  EOF
+2021-08-12 13:01:29 [WARN] [D:/project/go/BattleRabbit/Server/battle_rabbit/network/agent.go:98] ReadLoop ::  EOF
+2021-08-12 14:30:42 [WARN] [D:/project/go/BattleRabbit/Server/battle_rabbit/network/agent.go:98] ReadLoop ::  EOF
+2021-08-12 14:37:58 [WARN] [D:/project/go/BattleRabbit/Server/battle_rabbit/network/agent.go:98] ReadLoop ::  EOF
+2021-08-12 14:38:59 [WARN] [D:/project/go/BattleRabbit/Server/battle_rabbit/network/agent.go:98] ReadLoop ::  EOF
+2021-08-12 14:45:51 [WARN] [D:/project/go/BattleRabbit/Server/battle_rabbit/server/game/chest_handler.go:148] 钻石不足!!
+2021-08-12 14:45:52 [WARN] [D:/project/go/BattleRabbit/Server/battle_rabbit/server/game/chest_handler.go:148] 钻石不足!!
+2021-08-12 14:45:53 [WARN] [D:/project/go/BattleRabbit/Server/battle_rabbit/server/game/chest_handler.go:148] 钻石不足!!
+2021-08-12 14:48:10 [WARN] [D:/project/go/BattleRabbit/Server/battle_rabbit/network/agent.go:98] ReadLoop ::  EOF
+2021-08-12 14:57:32 [WARN] [D:/project/go/BattleRabbit/Server/battle_rabbit/network/agent.go:98] ReadLoop ::  EOF
+2021-08-12 14:58:15 [WARN] [D:/project/go/BattleRabbit/Server/battle_rabbit/network/agent.go:98] ReadLoop ::  EOF
+2021-08-12 15:03:27 [WARN] [D:/project/go/BattleRabbit/Server/battle_rabbit/network/agent.go:98] ReadLoop ::  EOF
+2021-08-12 15:04:52 [WARN] [D:/project/go/BattleRabbit/Server/battle_rabbit/network/agent.go:98] ReadLoop ::  EOF
+2021-08-12 15:05:35 [WARN] [D:/project/go/BattleRabbit/Server/battle_rabbit/network/agent.go:98] ReadLoop ::  EOF
+2021-08-12 15:07:36 [WARN] [D:/project/go/BattleRabbit/Server/battle_rabbit/network/agent.go:98] ReadLoop ::  EOF
+2021-08-12 15:34:03 [WARN] [D:/project/go/BattleRabbit/Server/battle_rabbit/network/agent.go:98] ReadLoop ::  EOF
+2021-08-12 15:34:32 [WARN] [D:/project/go/BattleRabbit/Server/battle_rabbit/network/agent.go:98] ReadLoop ::  EOF
+2021-08-12 15:36:58 [WARN] [D:/project/go/BattleRabbit/Server/battle_rabbit/network/agent.go:98] ReadLoop ::  EOF
+2021-08-12 15:38:35 [WARN] [D:/project/go/BattleRabbit/Server/battle_rabbit/network/agent.go:98] ReadLoop ::  EOF
+2021-08-12 15:38:57 [WARN] [D:/project/go/BattleRabbit/Server/battle_rabbit/network/agent.go:98] ReadLoop ::  EOF
+2021-08-12 15:40:01 [WARN] [D:/project/go/BattleRabbit/Server/battle_rabbit/network/agent.go:98] ReadLoop ::  EOF
+2021-08-12 15:41:13 [WARN] [D:/project/go/BattleRabbit/Server/battle_rabbit/network/agent.go:98] ReadLoop ::  EOF
+2021-08-12 15:41:46 [WARN] [D:/project/go/BattleRabbit/Server/battle_rabbit/network/agent.go:98] ReadLoop ::  EOF
+2021-08-12 15:42:07 [WARN] [D:/project/go/BattleRabbit/Server/battle_rabbit/network/agent.go:98] ReadLoop ::  EOF
+2021-08-12 15:42:49 [WARN] [D:/project/go/BattleRabbit/Server/battle_rabbit/network/agent.go:98] ReadLoop ::  EOF
+2021-08-12 15:42:55 [WARN] [D:/project/go/BattleRabbit/Server/battle_rabbit/network/agent.go:98] ReadLoop ::  EOF
+2021-08-12 15:43:54 [WARN] [D:/project/go/BattleRabbit/Server/battle_rabbit/excel/init_load.go:48] remove D:\project\go\BattleRabbit\Server\battle_rabbit\bin\xlsx\\TaskData.xlsx: The system cannot find the file specified.
+2021-08-12 15:45:11 [WARN] [D:/project/go/BattleRabbit/Server/battle_rabbit/network/agent.go:98] ReadLoop ::  EOF
+2021-08-12 15:45:54 [WARN] [D:/project/go/BattleRabbit/Server/battle_rabbit/network/agent.go:98] ReadLoop ::  EOF
+2021-08-12 15:46:26 [WARN] [D:/project/go/BattleRabbit/Server/battle_rabbit/network/agent.go:98] ReadLoop ::  EOF
+2021-08-12 15:48:18 [WARN] [D:/project/go/BattleRabbit/Server/battle_rabbit/network/agent.go:98] ReadLoop ::  EOF
+2021-08-12 15:48:27 [WARN] [D:/project/go/BattleRabbit/Server/battle_rabbit/network/agent.go:98] ReadLoop ::  EOF
+2021-08-12 15:51:11 [WARN] [D:/project/go/BattleRabbit/Server/battle_rabbit/network/agent.go:98] ReadLoop ::  EOF
+2021-08-12 15:51:15 [WARN] [D:/project/go/BattleRabbit/Server/battle_rabbit/network/agent.go:98] ReadLoop ::  EOF
+2021-08-12 15:52:00 [WARN] [D:/project/go/BattleRabbit/Server/battle_rabbit/network/agent.go:98] ReadLoop ::  EOF
+2021-08-12 15:52:40 [WARN] [D:/project/go/BattleRabbit/Server/battle_rabbit/network/agent.go:98] ReadLoop ::  EOF
+2021-08-12 15:53:56 [WARN] [D:/project/go/BattleRabbit/Server/battle_rabbit/network/agent.go:98] ReadLoop ::  EOF
+2021-08-12 15:54:29 [WARN] [D:/project/go/BattleRabbit/Server/battle_rabbit/network/agent.go:98] ReadLoop ::  EOF
+2021-08-12 15:55:26 [WARN] [D:/project/go/BattleRabbit/Server/battle_rabbit/network/agent.go:98] ReadLoop ::  EOF
+2021-08-12 15:58:37 [WARN] [D:/project/go/BattleRabbit/Server/battle_rabbit/network/agent.go:98] ReadLoop ::  EOF
+2021-08-12 15:58:45 [WARN] [D:/project/go/BattleRabbit/Server/battle_rabbit/network/agent.go:98] ReadLoop ::  EOF
+2021-08-12 15:59:03 [WARN] [D:/project/go/BattleRabbit/Server/battle_rabbit/network/agent.go:98] ReadLoop ::  EOF
+2021-08-12 16:00:11 [WARN] [D:/project/go/BattleRabbit/Server/battle_rabbit/network/agent.go:98] ReadLoop ::  EOF
+2021-08-12 16:00:34 [WARN] [D:/project/go/BattleRabbit/Server/battle_rabbit/network/agent.go:98] ReadLoop ::  EOF
+2021-08-12 16:01:31 [WARN] [D:/project/go/BattleRabbit/Server/battle_rabbit/network/agent.go:98] ReadLoop ::  EOF
+2021-08-12 16:19:04 [WARN] [D:/project/go/BattleRabbit/Server/battle_rabbit/network/agent.go:98] ReadLoop ::  EOF
+2021-08-12 16:20:20 [WARN] [D:/project/go/BattleRabbit/Server/battle_rabbit/network/agent.go:98] ReadLoop ::  EOF
+2021-08-12 16:24:14 [WARN] [D:/project/go/BattleRabbit/Server/battle_rabbit/network/agent.go:98] ReadLoop ::  EOF
+2021-08-12 16:32:57 [WARN] [D:/project/go/BattleRabbit/Server/battle_rabbit/network/agent.go:98] ReadLoop ::  EOF
+2021-08-12 16:33:30 [WARN] [D:/project/go/BattleRabbit/Server/battle_rabbit/network/agent.go:98] ReadLoop ::  EOF
+2021-08-12 16:38:53 [WARN] [D:/project/go/BattleRabbit/Server/battle_rabbit/network/agent.go:98] ReadLoop ::  EOF
+2021-08-12 16:40:21 [WARN] [D:/project/go/BattleRabbit/Server/battle_rabbit/network/agent.go:98] ReadLoop ::  EOF
+2021-08-12 16:40:37 [WARN] [D:/project/go/BattleRabbit/Server/battle_rabbit/network/agent.go:98] ReadLoop ::  EOF
+2021-08-12 16:42:00 [WARN] [D:/project/go/BattleRabbit/Server/battle_rabbit/network/agent.go:98] ReadLoop ::  EOF
+2021-08-12 16:43:28 [WARN] [D:/project/go/BattleRabbit/Server/battle_rabbit/network/agent.go:98] ReadLoop ::  EOF
+2021-08-12 16:44:14 [WARN] [D:/project/go/BattleRabbit/Server/battle_rabbit/network/agent.go:98] ReadLoop ::  EOF
+2021-08-12 16:47:03 [EROR] [D:/project/go/BattleRabbit/Server/battle_rabbit/server/game/hero_handler.go:148] <nil>
+2021-08-12 16:47:14 [EROR] [D:/project/go/BattleRabbit/Server/battle_rabbit/server/game/hero_handler.go:148] <nil>
+2021-08-12 16:55:03 [WARN] [D:/project/go/BattleRabbit/Server/battle_rabbit/network/agent.go:98] ReadLoop ::  EOF
+2021-08-12 16:56:08 [WARN] [D:/project/go/BattleRabbit/Server/battle_rabbit/network/agent.go:98] ReadLoop ::  EOF
+2021-08-12 16:56:46 [WARN] [D:/project/go/BattleRabbit/Server/battle_rabbit/network/agent.go:98] ReadLoop ::  EOF
+2021-08-12 16:58:48 [WARN] [D:/project/go/BattleRabbit/Server/battle_rabbit/network/agent.go:98] ReadLoop ::  EOF
+2021-08-12 16:59:05 [WARN] [D:/project/go/BattleRabbit/Server/battle_rabbit/network/agent.go:98] ReadLoop ::  EOF
+2021-08-12 17:00:03 [WARN] [D:/project/go/BattleRabbit/Server/battle_rabbit/network/agent.go:98] ReadLoop ::  EOF
+2021-08-12 17:03:01 [WARN] [D:/project/go/BattleRabbit/Server/battle_rabbit/network/agent.go:98] ReadLoop ::  EOF
+2021-08-12 17:03:42 [WARN] [D:/project/go/BattleRabbit/Server/battle_rabbit/network/agent.go:98] ReadLoop ::  EOF
+2021-08-12 17:04:30 [WARN] [D:/project/go/BattleRabbit/Server/battle_rabbit/network/agent.go:98] ReadLoop ::  EOF
+2021-08-12 17:04:30 [WARN] [D:/project/go/BattleRabbit/Server/battle_rabbit/network/agent.go:98] ReadLoop ::  EOF
+2021-08-12 17:05:07 [WARN] [D:/project/go/BattleRabbit/Server/battle_rabbit/network/agent.go:98] ReadLoop ::  EOF
+2021-08-12 17:07:18 [WARN] [D:/project/go/BattleRabbit/Server/battle_rabbit/network/agent.go:98] ReadLoop ::  EOF
+2021-08-12 17:07:20 [WARN] [D:/project/go/BattleRabbit/Server/battle_rabbit/network/agent.go:98] ReadLoop ::  EOF
+2021-08-12 17:09:47 [WARN] [D:/project/go/BattleRabbit/Server/battle_rabbit/network/agent.go:98] ReadLoop ::  EOF
+2021-08-12 17:11:33 [WARN] [D:/project/go/BattleRabbit/Server/battle_rabbit/network/agent.go:98] ReadLoop ::  EOF
+2021-08-12 17:12:29 [WARN] [D:/project/go/BattleRabbit/Server/battle_rabbit/network/agent.go:98] ReadLoop ::  EOF
+2021-08-12 17:13:41 [WARN] [D:/project/go/BattleRabbit/Server/battle_rabbit/network/agent.go:98] ReadLoop ::  EOF
+2021-08-12 17:15:34 [WARN] [D:/project/go/BattleRabbit/Server/battle_rabbit/network/agent.go:98] ReadLoop ::  EOF
+2021-08-12 17:21:50 [WARN] [D:/project/go/BattleRabbit/Server/battle_rabbit/network/agent.go:98] ReadLoop ::  EOF
+2021-08-12 17:23:55 [WARN] [D:/project/go/BattleRabbit/Server/battle_rabbit/network/agent.go:98] ReadLoop ::  EOF
+2021-08-12 17:26:07 [WARN] [D:/project/go/BattleRabbit/Server/battle_rabbit/network/agent.go:98] ReadLoop ::  EOF
+2021-08-12 17:27:52 [WARN] [D:/project/go/BattleRabbit/Server/battle_rabbit/network/agent.go:98] ReadLoop ::  EOF
+2021-08-12 17:30:37 [WARN] [D:/project/go/BattleRabbit/Server/battle_rabbit/network/agent.go:98] ReadLoop ::  EOF
+2021-08-12 17:30:37 [WARN] [D:/project/go/BattleRabbit/Server/battle_rabbit/network/agent.go:98] ReadLoop ::  EOF
+2021-08-12 17:30:37 [WARN] [D:/project/go/BattleRabbit/Server/battle_rabbit/network/agent.go:98] ReadLoop ::  EOF
+2021-08-12 17:30:37 [WARN] [D:/project/go/BattleRabbit/Server/battle_rabbit/network/agent.go:98] ReadLoop ::  EOF
+2021-08-12 17:30:37 [WARN] [D:/project/go/BattleRabbit/Server/battle_rabbit/network/agent.go:98] ReadLoop ::  EOF
+2021-08-12 17:30:37 [WARN] [D:/project/go/BattleRabbit/Server/battle_rabbit/network/agent.go:98] ReadLoop ::  EOF
+2021-08-12 17:31:22 [WARN] [D:/project/go/BattleRabbit/Server/battle_rabbit/network/agent.go:98] ReadLoop ::  EOF
+2021-08-12 17:31:22 [WARN] [D:/project/go/BattleRabbit/Server/battle_rabbit/network/agent.go:98] ReadLoop ::  EOF
+2021-08-12 17:31:22 [WARN] [D:/project/go/BattleRabbit/Server/battle_rabbit/network/agent.go:98] ReadLoop ::  EOF
+2021-08-12 17:31:22 [WARN] [D:/project/go/BattleRabbit/Server/battle_rabbit/network/agent.go:98] ReadLoop ::  EOF
+2021-08-12 17:32:07 [WARN] [D:/project/go/BattleRabbit/Server/battle_rabbit/network/agent.go:98] ReadLoop ::  EOF
+2021-08-12 17:33:05 [WARN] [D:/project/go/BattleRabbit/Server/battle_rabbit/network/agent.go:98] ReadLoop ::  EOF
+2021-08-12 17:35:52 [EROR] [D:/project/go/BattleRabbit/Server/battle_rabbit/utils/xlsx/xlsx_reader.go:67] strconv.ParseInt: parsing "weapon_01": invalid syntax
+2021-08-12 17:35:52 [EMER] [D:/project/go/BattleRabbit/Server/battle_rabbit/service/log/log.go:414] ###Exec Exit:strconv.ParseInt: parsing "weapon_01": invalid syntax%!(EXTRA string=goroutine 1 [running]:
+runtime/debug.Stack(0x0, 0x0, 0x0)
+	D:/tools/golang/goroot/src/runtime/debug/stack.go:24 +0xac
+battle_rabbit/service/log.(*LocalLogger).Fatal(0xc00030e060, 0xc0005a2380, 0x35, 0x0, 0x0, 0x0)
+	D:/project/go/BattleRabbit/Server/battle_rabbit/service/log/log.go:253 +0x3b
+battle_rabbit/service/log.Fatal(0x1f8ca20, 0xc0003d5620, 0x0, 0x0, 0x0)
+	D:/project/go/BattleRabbit/Server/battle_rabbit/service/log/log.go:414 +0x9d
+battle_rabbit/excel.InitXlsxConfig(0xc000525840, 0x33)
+	D:/project/go/BattleRabbit/Server/battle_rabbit/excel/init_load.go:121 +0x253
+main.main()
+	D:/project/go/BattleRabbit/Server/battle_rabbit/main.go:50 +0x252
+)
+2021-08-12 17:42:13 [WARN] [D:/project/go/BattleRabbit/Server/battle_rabbit/network/agent.go:98] ReadLoop ::  EOF
+2021-08-12 17:44:57 [WARN] [D:/project/go/BattleRabbit/Server/battle_rabbit/network/agent.go:98] ReadLoop ::  EOF
+2021-08-12 17:45:27 [WARN] [D:/project/go/BattleRabbit/Server/battle_rabbit/network/agent.go:98] ReadLoop ::  EOF
+2021-08-12 17:47:09 [WARN] [D:/project/go/BattleRabbit/Server/battle_rabbit/network/agent.go:98] ReadLoop ::  EOF
+2021-08-12 17:59:10 [WARN] [D:/project/go/BattleRabbit/Server/battle_rabbit/network/agent.go:98] ReadLoop ::  EOF
+2021-08-12 17:59:11 [WARN] [D:/project/go/BattleRabbit/Server/battle_rabbit/network/agent.go:98] ReadLoop ::  EOF
+2021-08-12 18:01:32 [WARN] [D:/project/go/BattleRabbit/Server/battle_rabbit/network/agent.go:98] ReadLoop ::  EOF
+2021-08-12 18:17:25 [WARN] [D:/project/go/BattleRabbit/Server/battle_rabbit/network/agent.go:98] ReadLoop ::  EOF
+2021-08-12 18:18:20 [WARN] [D:/project/go/BattleRabbit/Server/battle_rabbit/network/agent.go:98] ReadLoop ::  EOF
+2021-08-12 18:18:57 [WARN] [D:/project/go/BattleRabbit/Server/battle_rabbit/network/agent.go:98] ReadLoop ::  EOF
+2021-08-12 18:21:18 [WARN] [D:/project/go/BattleRabbit/Server/battle_rabbit/network/agent.go:98] ReadLoop ::  EOF
+2021-08-12 18:23:25 [WARN] [D:/project/go/BattleRabbit/Server/battle_rabbit/network/agent.go:98] ReadLoop ::  EOF
+2021-08-12 18:24:30 [WARN] [D:/project/go/BattleRabbit/Server/battle_rabbit/network/agent.go:98] ReadLoop ::  EOF
+2021-08-12 18:34:22 [WARN] [D:/project/go/BattleRabbit/Server/battle_rabbit/network/agent.go:98] ReadLoop ::  EOF
+2021-08-12 18:35:10 [WARN] [D:/project/go/BattleRabbit/Server/battle_rabbit/network/agent.go:98] ReadLoop ::  EOF
+2021-08-12 19:04:00 [WARN] [D:/project/go/BattleRabbit/Server/battle_rabbit/network/agent.go:98] ReadLoop ::  EOF
+2021-08-12 19:07:03 [WARN] [D:/project/go/BattleRabbit/Server/battle_rabbit/network/agent.go:98] ReadLoop ::  EOF
+2021-08-12 19:08:31 [WARN] [D:/project/go/BattleRabbit/Server/battle_rabbit/network/agent.go:98] ReadLoop ::  EOF
+2021-08-12 19:09:59 [WARN] [D:/project/go/BattleRabbit/Server/battle_rabbit/network/agent.go:98] ReadLoop ::  EOF
+2021-08-12 19:18:20 [WARN] [D:/project/go/BattleRabbit/Server/battle_rabbit/network/agent.go:98] ReadLoop ::  EOF
+2021-08-12 19:18:55 [WARN] [D:/project/go/BattleRabbit/Server/battle_rabbit/network/agent.go:98] ReadLoop ::  EOF
+2021-08-12 19:25:44 [WARN] [D:/project/go/BattleRabbit/Server/battle_rabbit/network/agent.go:98] ReadLoop ::  EOF
+2021-08-12 19:28:26 [WARN] [D:/project/go/BattleRabbit/Server/battle_rabbit/network/agent.go:98] ReadLoop ::  EOF
+2021-08-12 19:29:38 [WARN] [D:/project/go/BattleRabbit/Server/battle_rabbit/network/agent.go:98] ReadLoop ::  EOF
+2021-08-12 19:32:38 [WARN] [D:/project/go/BattleRabbit/Server/battle_rabbit/network/agent.go:98] ReadLoop ::  EOF
+2021-08-12 19:33:17 [WARN] [D:/project/go/BattleRabbit/Server/battle_rabbit/network/agent.go:98] ReadLoop ::  EOF
+2021-08-12 19:42:33 [WARN] [D:/project/go/BattleRabbit/Server/battle_rabbit/network/agent.go:98] ReadLoop ::  EOF
+2021-08-12 19:47:52 [WARN] [D:/project/go/BattleRabbit/Server/battle_rabbit/network/agent.go:98] ReadLoop ::  EOF
+2021-08-12 19:49:00 [WARN] [D:/project/go/BattleRabbit/Server/battle_rabbit/network/agent.go:98] ReadLoop ::  EOF
+2021-08-12 19:52:37 [WARN] [D:/project/go/BattleRabbit/Server/battle_rabbit/network/agent.go:98] ReadLoop ::  EOF
+2021-08-12 19:53:31 [WARN] [D:/project/go/BattleRabbit/Server/battle_rabbit/network/agent.go:98] ReadLoop ::  EOF
+2021-08-12 19:55:05 [WARN] [D:/project/go/BattleRabbit/Server/battle_rabbit/network/agent.go:98] ReadLoop ::  EOF
+2021-08-12 19:58:06 [WARN] [D:/project/go/BattleRabbit/Server/battle_rabbit/network/agent.go:98] ReadLoop ::  EOF
+2021-08-12 19:58:38 [WARN] [D:/project/go/BattleRabbit/Server/battle_rabbit/network/agent.go:98] ReadLoop ::  EOF
+2021-08-12 19:59:06 [WARN] [D:/project/go/BattleRabbit/Server/battle_rabbit/network/agent.go:98] ReadLoop ::  EOF
+2021-08-12 20:00:10 [WARN] [D:/project/go/BattleRabbit/Server/battle_rabbit/network/agent.go:98] ReadLoop ::  EOF
+2021-08-12 20:00:37 [WARN] [D:/project/go/BattleRabbit/Server/battle_rabbit/network/agent.go:98] ReadLoop ::  EOF
+2021-08-12 20:03:46 [WARN] [D:/project/go/BattleRabbit/Server/battle_rabbit/network/agent.go:98] ReadLoop ::  EOF
+2021-08-12 20:06:03 [WARN] [D:/project/go/BattleRabbit/Server/battle_rabbit/network/agent.go:98] ReadLoop ::  EOF
+2021-08-12 21:30:22 [WARN] [D:/project/go/BattleRabbit/Server/battle_rabbit/network/agent.go:98] ReadLoop ::  EOF
+2021-08-12 21:32:15 [WARN] [D:/project/go/BattleRabbit/Server/battle_rabbit/network/agent.go:98] ReadLoop ::  EOF

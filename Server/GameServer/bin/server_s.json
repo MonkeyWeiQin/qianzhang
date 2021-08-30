@@ -1,0 +1,70 @@
+{
+  "Debug": true,
+  "Dev": {"Gate":"Gate_1","Login": "Login_1","Lobby": "Lobby_1","Game": "Game_1"},
+  "RPC": {"RegisterAddr": ["127.0.0.1:8500"], "BasePath": "gm_battle"},
+  "Login": {
+    "Login_1": {"Id": "Login_1","Host": "0.0.0.0:8010", "JwtSecret": "vvappPlus","Mode": "debug", "Resource": "\\server\\web\\resource"},
+    "Login_2": {"Id": "Login_2","Host": "0.0.0.0:8011", "JwtSecret": "vvappPlus","Mode": "debug", "Resource": "\\server\\web\\resource"},
+    "Login_3": {"Id": "Login_3","Host": "0.0.0.0:8012", "JwtSecret": "vvappPlus","Mode": "debug", "Resource": "\\server\\web\\resource"}
+  },
+  "Gate": {
+    "Gate_1": {"Id": "Gate_1", "RpcAddr": "0.0.0.0:9010", "TCPAddr": "0.0.0.0:19010", "MaxMsgLen": 4096, "MaxConnNum": 20000, "SecretKey": "bit_game"},
+    "Gate_2": {"Id": "Gate_2", "RpcAddr": "0.0.0.0:9011", "TCPAddr": "0.0.0.0:19011", "MaxMsgLen": 4096, "MaxConnNum": 20000, "SecretKey": "bit_game"},
+    "Gate_3": {"Id": "Gate_3", "RpcAddr": "0.0.0.0:9012", "TCPAddr": "0.0.0.0:19012", "MaxMsgLen": 4096, "MaxConnNum": 20000, "SecretKey": "bit_game"}
+  },
+  "Lobby": {
+    "Lobby_1": {"id": "Lobby_1", "RpcAddr": "0.0.0.0:9110"},
+    "Lobby_2": {"id": "Lobby_2", "RpcAddr": "0.0.0.0:9111"},
+    "Lobby_3": {"id": "Lobby_3", "RpcAddr": "0.0.0.0:9112"}
+  },
+  "Game": {
+    "Game_1": {"id": "Game_1", "RpcAddr": "0.0.0.0:9210"},
+    "Game_2": {"id": "Game_2", "RpcAddr": "0.0.0.0:9211"},
+    "Game_3": {"id": "Game_3", "RpcAddr": "0.0.0.0:9212"}
+  },
+  "Log": {
+    "TimeFormat": "2006-01-02 15:04:05",
+    "Open": ["Console","File"],
+    "Console": {
+      "Level": "TRAC",
+      "Color": false
+    },
+    "File": {
+      "Filename": "logger/app.log",
+      "Level": "WARN",
+      "Daily": true,
+      "MaxLines": 1000000,
+      "maxsize": 1,
+      "MaxDays": -1,
+      "Append": true,
+      "PermitMask": "0660"
+    },
+    "Conn": {
+      "Net": "tcp",
+      "Addr": "",
+      "Level": "TRAC",
+      "Reconnect": true,
+      "ReconnectOnMsg": false
+    }
+  },
+  "Redis": {
+    "Host": "192.168.0.108:6379",
+    "Password": "",
+    "MaxIdle" : 10,
+    "MaxActive" :4096,
+    "IdleTimeout":600,
+    "DataBase": 8
+  },
+  "Mongo": [
+    {
+      "Key":"battle","Url" :["192.168.0.108:27011", "192.168.0.108:27012", "192.168.0.108:27013"], "DbName" : "battle", "Username" :"",
+      "Password" :"", "MaxPoolSize" : 4096, "MinPoolSize" : 5, "ConnectTimeout" :5, "MaxConnIdleTime" : 600, "ReplicaSet": "rs"
+    },
+    {
+      "Key":"battle_log","Url" :["192.168.0.108:27011", "192.168.0.108:27012", "192.168.0.108:27013"], "DbName" : "battle_log", "Username" :"",
+      "Password" :"", "MaxPoolSize" : 4096, "MinPoolSize" : 5, "ConnectTimeout" :5, "MaxConnIdleTime" : 600, "ReplicaSet": "rs"
+    }
+  ],
+  "Settings": {
+  }
+}

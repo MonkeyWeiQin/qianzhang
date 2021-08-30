@@ -1,0 +1,311 @@
+### DevId注册并登录
+POST {{web}}/v1/login_dev_id
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{
+  "devid":"wwwwww"
+}
+
+###
+### 玩家绑定连接,认证身份
+### !!!此API需要网关配合,故不能使用http测试!!!
+POST {{gate}}
+Content-Type: application/json
+
+{
+  "msgId":106010,
+  "uid":167,
+  "path":"Game",
+  "method":"CheckToken-fm",
+  "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2MjYzMzQ2OTksImp0aSI6IjE0IiwiaXNzIjoicW1QbHVzIiwibmJmIjoxNjI2MjQ4Mjg5fQ.EYy-7vpxf0NZCDPqlq88Z2_s82nvDcnIh2U-wJMajro",
+  "url": "http://127.0.0.1:8854"
+}
+
+###
+### 获取玩家基本信息
+POST {{gate}}
+Content-Type: application/json
+
+{
+  "msgId":106020,
+  "uid": {{uid}},
+  "path":"Game_1",
+  "method":"GetPlayerInfo"
+}
+
+
+###
+### 获取玩角色属性数据
+POST {{gate}}
+Content-Type: application/json
+
+{
+  "msgId":106030,
+  "uid":{{uid}},
+  "path":"Game_1",
+  "method":"GetRoleInfo"
+}
+
+###
+### 获取角色天赋等级
+POST {{gate}}
+Content-Type: application/json
+
+{
+  "msgId":106040,
+  "uid":{{uid}},
+  "path":"Game_1",
+  "method":"GetRoleTalentLv"
+}
+
+
+###
+### 玩家选择关卡并进入游戏
+POST {{gate}}
+Content-Type: application/json
+
+{
+  "msgId":104030,
+  "uid":{{uid}},
+  "path":"Lobby",
+  "method":"PlayerJoinGame",
+  "StageType":1,
+  "StageId":"level001"
+}
+###
+
+### 闯关结算
+POST {{gate}}
+Content-Type: application/json
+
+{
+  "msgId":104010,
+  "uid":{{uid}},
+  "path":"Lobby",
+  "method":"CreatePlayerStage",
+  "stageId": "level001",
+  "stageType": 1,
+  "stagePass": true,
+  "rewardGold": 123211
+}
+###
+
+### 获取玩家所有装备列表
+POST {{gate}}
+Content-Type: application/json
+
+{
+  "msgId":107010,
+  "uid":{{uid}},
+  "path":"Game_1",
+  "method":"GetEquipmentList",
+  "equipmentType":1
+}
+###
+
+### 切换装备/换上装备
+POST {{gate}}
+Content-Type: application/json
+
+{
+  "msgId":107020,
+  "uid":{{uid}},
+  "path":"Game_1",
+  "method":"ChangeEquipment",
+  "equipmentType": 1,
+  "equipmentId": "60dbdada9cfc17604690d9dd"
+}
+###
+
+### 脱下装备/取消装备
+POST {{gate}}
+Content-Type: application/json
+
+{
+  "msgId":107020,
+  "uid":167,
+  "path":"Game_1",
+  "method":"CancelEquipment",
+  "equipmentType": 1
+}
+###
+
+### 获取英雄列表
+POST {{gate}}
+Content-Type: application/json
+
+{
+  "msgId":110020,
+  "uid":{{uid}},
+  "path":"Game_1",
+  "method":"GetHeroList"
+}
+###
+
+### 英雄出战
+POST {{gate}}
+Content-Type: application/json
+
+{
+  "msgId":110030,
+  "uid":{{uid}},
+  "path":"Hero",
+  "method":"HeroGoToWar",
+  "heroId": "60dadcab5656c27fab4f34fd"
+}
+###
+
+### 英雄取消出战
+POST {{gate}}
+Content-Type: application/json
+
+{
+  "msgId":110040,
+  "uid":{{uid}},
+  "path":"Hero",
+  "method":"HeroCancelGoToWar",
+  "heroId": "60dadcab5656c27fab4f34fd"
+}
+###
+
+### 角色天赋升级
+POST {{gate}}
+Content-Type: application/json
+
+{
+  "msgId":106050,
+  "uid":{{uid}},
+  "path":"Game_1",
+  "method":"UpgradeRoleTalentLv",
+  "ty": 1
+}
+###
+
+
+### 角色星级升星
+POST {{gate}}
+Content-Type: application/json
+
+{
+  "msgId":106070,
+  "uid":{{uid}},
+  "path":"Game_1",
+  "method":"UpgradeRoleStar"
+}
+###
+
+
+### 英雄 升级 升星 主动/被动 装备 升级
+# ty  10 // 升级
+#     20 // 升星
+#     30 // 主动技能升级
+#     40 // 被动技能1升级
+#     41 // 被动技能2升级
+#     42 // 被动技能3升级
+#     43 // 被动技能4升级
+#
+# mid 数据库中英雄的唯一ID
+###
+POST {{gate}}
+Content-Type: application/json
+
+{
+  "msgId":110050,
+  "uid":{{uid}},
+  "path":"Game_1",
+  "method":"HeroUpgrade",
+  "ty":10,
+  "rid": "hero_01"
+}
+###
+
+
+### 装备升级
+POST {{gate}}
+Content-Type: application/json
+
+{
+   "msgId":107040,
+  "uid":{{uid}},
+  "path":"Equipment",
+  "method":"EquipmentUpgrade",
+  "ty":0,
+  "mid": "60db22c880ea13fb68647c6e"
+}
+###
+
+### 使用经验卡
+POST {{gate}}
+Content-Type: application/json
+
+{
+   "msgId":106080,
+  "uid":{{uid}},
+  "path":"Game_1",
+  "method":"UpgradeRoleLevelByLvCard",
+  "mid": "60dc2c28fd137cdd4f1f6aaf"
+}
+###
+
+
+### 获取背包中的卡数据
+POST {{gate}}
+Content-Type: application/json
+
+{
+   "msgId":140010,
+  "uid":{{uid}},
+  "path":"Game_1",
+  "method":"GetBackpackData"
+}
+###
+
+### 获取背包中的卡数据
+POST {{gate}}
+Content-Type: application/json
+
+{
+  "msgId":140020,
+  "uid":{{uid}},
+  "path":"Game_1",
+  "method":"UseExpCard",
+  "card001_8":2,
+  "card001_9":1
+
+}
+###
+
+
+
+### 获取活动配置数据
+POST {{gate}}
+Content-Type: application/json
+
+{
+  "msgId":104040,
+  "uid":{{uid}},
+  "path":"Lobby",
+  "method":"GetActiveStageConf"
+}
+###
+
+
+
+### 获取玩家关卡记录
+POST {{gate}}
+Content-Type: application/json
+
+{
+  "msgId":104050,
+  "uid":{{uid}},
+  "path":"Lobby",
+  "method":"GetUserStageRecord"
+}
+###
+
+
+
+
+

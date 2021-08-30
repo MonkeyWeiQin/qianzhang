@@ -1,0 +1,226 @@
+###
+### DevId注册并登录
+POST {{web}}/v1/login_dev_id
+#POST http://127.0.0.1:8854/v1/login_dev_id
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{
+  "devid":"4214214214224241421"
+}
+
+###
+### 玩家绑定连接,认证身份
+### !!!此API需要网关配合,故不能使用http测试!!!
+POST http://127.0.0.1:9981
+Content-Type: application/json
+
+{
+  "msgId":106010,
+  "uid":199,
+  "path":"Player",
+  "method":"CheckToken",
+  "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2MjI3OTMxNTYsImp0aSI6IjE2NyIsImlzcyI6InFtUGx1cyIsIm5iZiI6MTYyMjcwNjc0Nn0.oMz9H-F5_BqeWwmPUwu9RXjbQ6ph7V9o4PxhJvGjr44",
+  "url": "http://127.0.0.1:8854"
+}
+
+###
+### 获取玩家邮件列表
+POST {{gate}}
+Content-Type: application/json
+
+{
+  "msgId":102010,
+  "uid": {{uid}},
+  "path":"Mail",
+  "method":"GetPlayerMailList",
+  "page":1,
+  "pageSize":10
+}
+
+
+###
+### 一键领取附件内容
+POST {{gate}}
+Content-Type: application/json
+
+{
+  "msgId":102040,
+  "uid": {{uid}},
+  "path":"Mail",
+  "method":"ReceiveMailGifts"
+}
+
+
+###
+### 领取单个附件
+POST {{gate}}
+Content-Type: application/json
+
+{
+  "msgId":102050,
+  "uid": {{uid}},
+  "path":"Mail",
+  "method":"ReceiveMailGift",
+  "type":1,
+  "id":"60c9981d97627a06fa75bcea"
+}
+
+###
+### 一键删除
+POST {{gate}}
+Content-Type: application/json
+
+{
+  "msgId":102030,
+  "uid": {{uid}},
+  "path":"Mail",
+  "method":"DelPlayerMails"
+}
+
+###
+### 设置已读
+POST {{gate}}
+Content-Type: application/json
+
+{
+  "msgId":102020,
+  "uid": {{uid}},
+  "path":"Mail",
+  "method":"SetPlayerMailRead",
+  "type":1,
+  "id":"60c9c641ee7037f342c3bce8"
+}
+
+
+###
+### 通关结算
+POST {{gate}}
+Content-Type: application/json
+
+{
+  "msgId":104010,
+  "uid": {{uid}},
+  "path":"Stage",
+  "method":"CreatePlayerStage",
+  "stageType":1,
+  "stageId":"level004",
+  "stagePass":true
+}
+
+
+###
+### 获取公告
+POST {{gate}}
+Content-Type: application/json
+
+{
+  "msgId":101050,
+  "uid": {{uid}},
+  "path":"Notice",
+  "method":"GetNotice"
+}
+
+
+###
+### 免费开宝箱
+POST {{gate}}
+Content-Type: application/json
+
+{
+  "msgId":130010,
+  "uid": {{uid}},
+  "path":"Chest",
+  "method":"FreeOpenChest",
+  "id":"treasurebox001"
+}
+
+###
+### 付费开一次
+POST {{gate}}
+Content-Type: application/json
+
+{
+  "msgId":130020,
+  "uid": {{uid}},
+  "path":"Chest",
+  "method":"OneTimesOpenChest",
+  "id":"treasurebox001"
+}
+
+###
+### 付费开十次
+POST {{gate}}
+Content-Type: application/json
+
+{
+  "msgId":130030,
+  "uid": {{uid}},
+  "path":"Chest",
+  "method":"TenTimesOpenChest",
+  "id":"treasurebox001"
+}
+
+
+###
+### 获取免费开宝箱时间
+POST {{gate}}
+Content-Type: application/json
+
+{
+  "msgId":130040,
+  "uid": {{uid}},
+  "path":"Chest",
+  "method":"GetFreeTime"
+}
+
+
+###
+### 获取是否是第一次购买
+POST {{gate}}
+Content-Type: application/json
+
+{
+  "msgId":130110,
+  "uid": {{uid}},
+  "path":"Shop",
+  "method":"GetFirstPurchase"
+}
+
+###
+### 购买商品
+POST {{gate}}
+Content-Type: application/json
+
+{
+  "msgId":130120,
+  "uid": {{uid}},
+  "path":"Shop",
+  "method":"PurchaseGoods",
+  "id":"diamond_3"
+}
+
+###
+### 跑马灯
+POST {{gate}}
+Content-Type: application/json
+
+{
+  "msgId":101060,
+  "uid": {{uid}},
+  "path":"BroadCast",
+  "method":"GetBroadCast"
+}
+
+###
+### 签到
+POST {{gate}}
+Content-Type: application/json
+
+{
+  "msgId":101030,
+  "uid": {{uid}},
+  "path":"SevenDayActivity",
+  "method":"SevenDaySignIn"
+}

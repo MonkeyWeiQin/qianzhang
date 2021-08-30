@@ -1,0 +1,164 @@
+2021-08-15 11:55:56 [WARN] [D:/project/go/BattleRabbit/Server/battle_rabbit/network/agent.go:98] ReadLoop ::  EOF
+2021-08-15 11:59:05 [WARN] [D:/project/go/BattleRabbit/Server/battle_rabbit/network/agent.go:98] ReadLoop ::  EOF
+2021-08-15 13:44:54 [WARN] [D:/project/go/BattleRabbit/Server/battle_rabbit/network/agent.go:98] ReadLoop ::  EOF
+2021-08-15 14:02:24 [WARN] [D:/project/go/BattleRabbit/Server/battle_rabbit/network/agent.go:98] ReadLoop ::  EOF
+2021-08-15 14:04:43 [WARN] [D:/project/go/BattleRabbit/Server/battle_rabbit/network/agent.go:98] ReadLoop ::  EOF
+2021-08-15 14:27:07 [WARN] [D:/project/go/BattleRabbit/Server/battle_rabbit/network/agent.go:98] ReadLoop ::  EOF
+2021-08-15 14:50:23 [EROR] [D:/project/go/BattleRabbit/Server/battle_rabbit/server/game/hero_handler.go:64] 出战失败，英雄数量上限 :
+2021-08-15 14:50:30 [EROR] [D:/project/go/BattleRabbit/Server/battle_rabbit/network/agent.go:200] DoMsgHandler =====: runtime error: invalid memory address or nil pointer dereference
+2021-08-15 14:50:30 [EROR] [D:/project/go/BattleRabbit/Server/battle_rabbit/network/agent.go:201] goroutine 966544 [running]:
+runtime/debug.Stack(0x0, 0x0, 0x0)
+	D:/tools/golang/goroot/src/runtime/debug/stack.go:24 +0xac
+battle_rabbit/network.(*Agent).doMsgHandler.func1()
+	D:/project/go/BattleRabbit/Server/battle_rabbit/network/agent.go:201 +0xea
+panic(0x2270b20, 0x2bdca50)
+	D:/tools/golang/goroot/src/runtime/panic.go:975 +0x4c7
+battle_rabbit/server/game.(*Game).StartPlayStage(0xc0006e60c0, 0x24dcf80, 0xc00005d040, 0xc00014aac0)
+	D:/project/go/BattleRabbit/Server/battle_rabbit/server/game/stage_handler.go:200 +0x17ba
+battle_rabbit/network.(*Agent).doMsgHandler(0xc000a21040, 0xc00005d040, 0xc00014aac0)
+	D:/project/go/BattleRabbit/Server/battle_rabbit/network/agent.go:211 +0x1d6
+battle_rabbit/network.(*Agent).ReadLoop(0xc000a21040)
+	D:/project/go/BattleRabbit/Server/battle_rabbit/network/agent.go:116 +0x79f
+battle_rabbit/network.(*Agent).Run(0xc000a21040, 0x0, 0x0)
+	D:/project/go/BattleRabbit/Server/battle_rabbit/network/agent.go:56 +0x189
+battle_rabbit/network.(*TCPServer).Start.func1(0x24d80a0, 0xc000a21040, 0xc00093c300)
+	D:/project/go/BattleRabbit/Server/battle_rabbit/network/tcp.go:73 +0xb6
+created by battle_rabbit/network.(*TCPServer).Start
+	D:/project/go/BattleRabbit/Server/battle_rabbit/network/tcp.go:69 +0x545
+
+2021-08-15 14:51:05 [WARN] [D:/project/go/BattleRabbit/Server/battle_rabbit/network/agent.go:98] ReadLoop ::  EOF
+2021-08-15 14:51:25 [EROR] [D:/project/go/BattleRabbit/Server/battle_rabbit/network/agent.go:200] DoMsgHandler =====: runtime error: invalid memory address or nil pointer dereference
+2021-08-15 14:51:25 [EROR] [D:/project/go/BattleRabbit/Server/battle_rabbit/network/agent.go:201] goroutine 967581 [running]:
+runtime/debug.Stack(0x0, 0x0, 0x0)
+	D:/tools/golang/goroot/src/runtime/debug/stack.go:24 +0xac
+battle_rabbit/network.(*Agent).doMsgHandler.func1()
+	D:/project/go/BattleRabbit/Server/battle_rabbit/network/agent.go:201 +0xea
+panic(0x2270b20, 0x2bdca50)
+	D:/tools/golang/goroot/src/runtime/panic.go:975 +0x4c7
+battle_rabbit/server/game.(*Game).StartPlayStage(0xc0006e60c0, 0x24dcf80, 0xc00079ea50, 0xc0004da7c0)
+	D:/project/go/BattleRabbit/Server/battle_rabbit/server/game/stage_handler.go:200 +0x17ba
+battle_rabbit/network.(*Agent).doMsgHandler(0xc00005c550, 0xc00079ea50, 0xc0004da7c0)
+	D:/project/go/BattleRabbit/Server/battle_rabbit/network/agent.go:211 +0x1d6
+battle_rabbit/network.(*Agent).ReadLoop(0xc00005c550)
+	D:/project/go/BattleRabbit/Server/battle_rabbit/network/agent.go:116 +0x79f
+battle_rabbit/network.(*Agent).Run(0xc00005c550, 0x0, 0x0)
+	D:/project/go/BattleRabbit/Server/battle_rabbit/network/agent.go:56 +0x189
+battle_rabbit/network.(*TCPServer).Start.func1(0x24d80a0, 0xc00005c550, 0xc00093c300)
+	D:/project/go/BattleRabbit/Server/battle_rabbit/network/tcp.go:73 +0xb6
+created by battle_rabbit/network.(*TCPServer).Start
+	D:/project/go/BattleRabbit/Server/battle_rabbit/network/tcp.go:69 +0x545
+
+2021-08-15 14:51:45 [WARN] [D:/project/go/BattleRabbit/Server/battle_rabbit/network/agent.go:98] ReadLoop ::  EOF
+2021-08-15 14:52:13 [EROR] [D:/project/go/BattleRabbit/Server/battle_rabbit/network/agent.go:200] DoMsgHandler =====: runtime error: invalid memory address or nil pointer dereference
+2021-08-15 14:52:13 [EROR] [D:/project/go/BattleRabbit/Server/battle_rabbit/network/agent.go:201] goroutine 967845 [running]:
+runtime/debug.Stack(0x0, 0x0, 0x0)
+	D:/tools/golang/goroot/src/runtime/debug/stack.go:24 +0xac
+battle_rabbit/network.(*Agent).doMsgHandler.func1()
+	D:/project/go/BattleRabbit/Server/battle_rabbit/network/agent.go:201 +0xea
+panic(0x2270b20, 0x2bdca50)
+	D:/tools/golang/goroot/src/runtime/panic.go:975 +0x4c7
+battle_rabbit/server/game.(*Game).StartPlayStage(0xc0006e60c0, 0x24dcf80, 0xc000397540, 0xc00024c540)
+	D:/project/go/BattleRabbit/Server/battle_rabbit/server/game/stage_handler.go:200 +0x17ba
+battle_rabbit/network.(*Agent).doMsgHandler(0xc00079f400, 0xc000397540, 0xc00024c540)
+	D:/project/go/BattleRabbit/Server/battle_rabbit/network/agent.go:211 +0x1d6
+battle_rabbit/network.(*Agent).ReadLoop(0xc00079f400)
+	D:/project/go/BattleRabbit/Server/battle_rabbit/network/agent.go:116 +0x79f
+battle_rabbit/network.(*Agent).Run(0xc00079f400, 0x0, 0x0)
+	D:/project/go/BattleRabbit/Server/battle_rabbit/network/agent.go:56 +0x189
+battle_rabbit/network.(*TCPServer).Start.func1(0x24d80a0, 0xc00079f400, 0xc00093c300)
+	D:/project/go/BattleRabbit/Server/battle_rabbit/network/tcp.go:73 +0xb6
+created by battle_rabbit/network.(*TCPServer).Start
+	D:/project/go/BattleRabbit/Server/battle_rabbit/network/tcp.go:69 +0x545
+
+2021-08-15 14:52:41 [WARN] [D:/project/go/BattleRabbit/Server/battle_rabbit/network/agent.go:98] ReadLoop ::  EOF
+2021-08-15 14:53:40 [WARN] [D:/project/go/BattleRabbit/Server/battle_rabbit/network/agent.go:98] ReadLoop ::  EOF
+2021-08-15 14:55:42 [WARN] [D:/project/go/BattleRabbit/Server/battle_rabbit/network/agent.go:98] ReadLoop ::  EOF
+2021-08-15 14:57:57 [WARN] [D:/project/go/BattleRabbit/Server/battle_rabbit/network/agent.go:98] ReadLoop ::  EOF
+2021-08-15 15:03:58 [WARN] [D:/project/go/BattleRabbit/Server/battle_rabbit/network/agent.go:98] ReadLoop ::  EOF
+2021-08-15 15:08:16 [WARN] [D:/project/go/BattleRabbit/Server/battle_rabbit/network/agent.go:98] ReadLoop ::  EOF
+2021-08-15 15:16:08 [WARN] [D:/project/go/BattleRabbit/Server/battle_rabbit/network/agent.go:98] ReadLoop ::  read tcp 192.168.0.44:19010->192.168.0.176:56529: wsarecv: An existing connection was forcibly closed by the remote host.
+2021-08-15 15:26:12 [WARN] [D:/project/go/BattleRabbit/Server/battle_rabbit/network/agent.go:98] ReadLoop ::  EOF
+2021-08-15 15:29:44 [WARN] [D:/project/go/BattleRabbit/Server/battle_rabbit/network/agent.go:98] ReadLoop ::  EOF
+2021-08-15 15:30:42 [WARN] [D:/project/go/BattleRabbit/Server/battle_rabbit/network/agent.go:98] ReadLoop ::  EOF
+2021-08-15 15:32:35 [WARN] [D:/project/go/BattleRabbit/Server/battle_rabbit/network/agent.go:98] ReadLoop ::  EOF
+2021-08-15 16:31:17 [WARN] [D:/project/go/BattleRabbit/Server/battle_rabbit/network/agent.go:98] ReadLoop ::  EOF
+2021-08-15 16:50:34 [WARN] [D:/project/go/BattleRabbit/Server/battle_rabbit/network/agent.go:98] ReadLoop ::  EOF
+2021-08-15 16:52:09 [WARN] [D:/project/go/BattleRabbit/Server/battle_rabbit/network/agent.go:98] ReadLoop ::  EOF
+2021-08-15 16:57:33 [WARN] [D:/project/go/BattleRabbit/Server/battle_rabbit/network/agent.go:98] ReadLoop ::  EOF
+2021-08-15 17:00:16 [EROR] [D:/project/go/BattleRabbit/Server/battle_rabbit/network/agent.go:200] DoMsgHandler =====: runtime error: invalid memory address or nil pointer dereference
+2021-08-15 17:00:16 [EROR] [D:/project/go/BattleRabbit/Server/battle_rabbit/network/agent.go:201] goroutine 1010455 [running]:
+runtime/debug.Stack(0x0, 0x0, 0x0)
+	D:/tools/golang/goroot/src/runtime/debug/stack.go:24 +0xac
+battle_rabbit/network.(*Agent).doMsgHandler.func1()
+	D:/project/go/BattleRabbit/Server/battle_rabbit/network/agent.go:201 +0xea
+panic(0x2270b20, 0x2bdca50)
+	D:/tools/golang/goroot/src/runtime/panic.go:975 +0x4c7
+battle_rabbit/server/game.(*Game).StartPlayStage(0xc0006e60c0, 0x24dcf80, 0xc00005c460, 0xc00024c120)
+	D:/project/go/BattleRabbit/Server/battle_rabbit/server/game/stage_handler.go:200 +0x17ba
+battle_rabbit/network.(*Agent).doMsgHandler(0xc0000dceb0, 0xc00005c460, 0xc00024c120)
+	D:/project/go/BattleRabbit/Server/battle_rabbit/network/agent.go:211 +0x1d6
+battle_rabbit/network.(*Agent).ReadLoop(0xc0000dceb0)
+	D:/project/go/BattleRabbit/Server/battle_rabbit/network/agent.go:116 +0x79f
+battle_rabbit/network.(*Agent).Run(0xc0000dceb0, 0x0, 0x0)
+	D:/project/go/BattleRabbit/Server/battle_rabbit/network/agent.go:56 +0x189
+battle_rabbit/network.(*TCPServer).Start.func1(0x24d80a0, 0xc0000dceb0, 0xc00093c300)
+	D:/project/go/BattleRabbit/Server/battle_rabbit/network/tcp.go:73 +0xb6
+created by battle_rabbit/network.(*TCPServer).Start
+	D:/project/go/BattleRabbit/Server/battle_rabbit/network/tcp.go:69 +0x545
+
+2021-08-15 17:00:33 [WARN] [D:/project/go/BattleRabbit/Server/battle_rabbit/network/agent.go:98] ReadLoop ::  EOF
+2021-08-15 17:01:24 [EROR] [D:/project/go/BattleRabbit/Server/battle_rabbit/network/agent.go:200] DoMsgHandler =====: runtime error: invalid memory address or nil pointer dereference
+2021-08-15 17:01:24 [EROR] [D:/project/go/BattleRabbit/Server/battle_rabbit/network/agent.go:201] goroutine 1010899 [running]:
+runtime/debug.Stack(0x0, 0x0, 0x0)
+	D:/tools/golang/goroot/src/runtime/debug/stack.go:24 +0xac
+battle_rabbit/network.(*Agent).doMsgHandler.func1()
+	D:/project/go/BattleRabbit/Server/battle_rabbit/network/agent.go:201 +0xea
+panic(0x2270b20, 0x2bdca50)
+	D:/tools/golang/goroot/src/runtime/panic.go:975 +0x4c7
+battle_rabbit/server/game.(*Game).StartPlayStage(0xc0006e60c0, 0x24dcf80, 0xc0000ddf40, 0xc000015b20)
+	D:/project/go/BattleRabbit/Server/battle_rabbit/server/game/stage_handler.go:200 +0x17ba
+battle_rabbit/network.(*Agent).doMsgHandler(0xc00005db80, 0xc0000ddf40, 0xc000015b20)
+	D:/project/go/BattleRabbit/Server/battle_rabbit/network/agent.go:211 +0x1d6
+battle_rabbit/network.(*Agent).ReadLoop(0xc00005db80)
+	D:/project/go/BattleRabbit/Server/battle_rabbit/network/agent.go:116 +0x79f
+battle_rabbit/network.(*Agent).Run(0xc00005db80, 0x0, 0x0)
+	D:/project/go/BattleRabbit/Server/battle_rabbit/network/agent.go:56 +0x189
+battle_rabbit/network.(*TCPServer).Start.func1(0x24d80a0, 0xc00005db80, 0xc00093c300)
+	D:/project/go/BattleRabbit/Server/battle_rabbit/network/tcp.go:73 +0xb6
+created by battle_rabbit/network.(*TCPServer).Start
+	D:/project/go/BattleRabbit/Server/battle_rabbit/network/tcp.go:69 +0x545
+
+2021-08-15 17:02:50 [WARN] [D:/project/go/BattleRabbit/Server/battle_rabbit/network/agent.go:98] ReadLoop ::  EOF
+2021-08-15 17:03:37 [WARN] [D:/project/go/BattleRabbit/Server/battle_rabbit/network/agent.go:98] ReadLoop ::  EOF
+2021-08-15 17:06:27 [WARN] [D:/project/go/BattleRabbit/Server/battle_rabbit/network/agent.go:98] ReadLoop ::  EOF
+2021-08-15 17:13:34 [WARN] [D:/project/go/BattleRabbit/Server/battle_rabbit/network/agent.go:98] ReadLoop ::  EOF
+2021-08-15 17:16:53 [WARN] [D:/project/go/BattleRabbit/Server/battle_rabbit/network/agent.go:98] ReadLoop ::  EOF
+2021-08-15 17:20:26 [WARN] [D:/project/go/BattleRabbit/Server/battle_rabbit/network/agent.go:98] ReadLoop ::  EOF
+2021-08-15 17:23:46 [WARN] [D:/project/go/BattleRabbit/Server/battle_rabbit/network/agent.go:98] ReadLoop ::  EOF
+2021-08-15 17:26:43 [WARN] [D:/project/go/BattleRabbit/Server/battle_rabbit/network/agent.go:98] ReadLoop ::  EOF
+2021-08-15 17:34:09 [WARN] [D:/project/go/BattleRabbit/Server/battle_rabbit/network/agent.go:98] ReadLoop ::  EOF
+2021-08-15 17:35:22 [WARN] [D:/project/go/BattleRabbit/Server/battle_rabbit/network/agent.go:98] ReadLoop ::  EOF
+2021-08-15 17:37:23 [WARN] [D:/project/go/BattleRabbit/Server/battle_rabbit/network/agent.go:98] ReadLoop ::  EOF
+2021-08-15 17:38:21 [WARN] [D:/project/go/BattleRabbit/Server/battle_rabbit/network/agent.go:98] ReadLoop ::  EOF
+2021-08-15 17:44:16 [WARN] [D:/project/go/BattleRabbit/Server/battle_rabbit/network/agent.go:98] ReadLoop ::  EOF
+2021-08-15 17:48:53 [WARN] [D:/project/go/BattleRabbit/Server/battle_rabbit/network/agent.go:98] ReadLoop ::  EOF
+2021-08-15 17:51:27 [WARN] [D:/project/go/BattleRabbit/Server/battle_rabbit/network/agent.go:98] ReadLoop ::  EOF
+2021-08-15 17:53:33 [WARN] [D:/project/go/BattleRabbit/Server/battle_rabbit/network/agent.go:98] ReadLoop ::  EOF
+2021-08-15 18:00:16 [WARN] [D:/project/go/BattleRabbit/Server/battle_rabbit/network/agent.go:98] ReadLoop ::  EOF
+2021-08-15 18:06:40 [WARN] [D:/project/go/BattleRabbit/Server/battle_rabbit/network/agent.go:98] ReadLoop ::  EOF
+2021-08-15 18:08:45 [WARN] [D:/project/go/BattleRabbit/Server/battle_rabbit/network/agent.go:98] ReadLoop ::  EOF
+2021-08-15 18:10:29 [WARN] [D:/project/go/BattleRabbit/Server/battle_rabbit/network/agent.go:98] ReadLoop ::  EOF
+2021-08-15 18:13:45 [WARN] [D:/project/go/BattleRabbit/Server/battle_rabbit/network/agent.go:98] ReadLoop ::  EOF
+2021-08-15 18:25:16 [WARN] [D:/project/go/BattleRabbit/Server/battle_rabbit/network/agent.go:98] ReadLoop ::  EOF
+2021-08-15 18:29:34 [WARN] [D:/project/go/BattleRabbit/Server/battle_rabbit/network/agent.go:98] ReadLoop ::  EOF
+2021-08-15 18:30:42 [WARN] [D:/project/go/BattleRabbit/Server/battle_rabbit/network/agent.go:98] ReadLoop ::  EOF
+2021-08-15 18:34:22 [WARN] [D:/project/go/BattleRabbit/Server/battle_rabbit/network/agent.go:98] ReadLoop ::  EOF
+2021-08-15 18:43:18 [WARN] [D:/project/go/BattleRabbit/Server/battle_rabbit/network/agent.go:98] ReadLoop ::  EOF
+2021-08-15 19:53:03 [WARN] [D:/project/go/BattleRabbit/Server/battle_rabbit/network/agent.go:98] ReadLoop ::  EOF
+2021-08-15 19:54:47 [WARN] [D:/project/go/BattleRabbit/Server/battle_rabbit/network/agent.go:98] ReadLoop ::  EOF
+2021-08-15 19:55:52 [WARN] [D:/project/go/BattleRabbit/Server/battle_rabbit/network/agent.go:98] ReadLoop ::  EOF
+2021-08-15 19:59:04 [WARN] [D:/project/go/BattleRabbit/Server/battle_rabbit/network/agent.go:98] ReadLoop ::  EOF
+2021-08-15 20:18:55 [WARN] [D:/project/go/BattleRabbit/Server/battle_rabbit/network/agent.go:98] ReadLoop ::  EOF
+2021-08-15 20:20:28 [WARN] [D:/project/go/BattleRabbit/Server/battle_rabbit/network/agent.go:98] ReadLoop ::  EOF
+2021-08-15 21:08:18 [WARN] [D:/project/go/BattleRabbit/Server/battle_rabbit/network/agent.go:98] ReadLoop ::  EOF
+2021-08-15 21:23:50 [WARN] [D:/project/go/BattleRabbit/Server/battle_rabbit/network/agent.go:98] ReadLoop ::  EOF

@@ -1,0 +1,33 @@
+{
+  "jwt_secret": "vvappPlus",
+  "lobby_server": "192.168.0.88:8890",
+  "server": {
+    "host": "0.0.0.0",
+    "port": "8088",
+    "root": "F:\\BattleRabbit\\Server\\GunFireServer",
+    "resource" : "F:\\BattleRabbit\\Server\\GunFireServer\\resource",
+    "log_dir": "F:\\BattleRabbit\\Server\\GunFireServer\\logs",
+    "language": "zh_cn"
+  },
+  "mongo": {
+    "host": ["192.168.0.108:27011"],
+    "replica_set": "",
+    "db_name": "battle",
+    "log_db_name": "gunfire_app_log",
+    "username": "",
+    "password": "",
+    "max_pool_size": 1024,
+    "min_pool_size": 5,
+    "connect_timeout": 600,
+    "max_conn_idle_time": 5
+  },
+  "redis": {
+    "host": "192.168.0.108",
+    "port": "6379",
+    "password": "",
+    "max_idle": 10,
+    "max_active": 1024,
+    "idleTimeout": 600,
+    "data_base": 8
+  }
+}

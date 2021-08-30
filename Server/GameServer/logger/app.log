@@ -1,0 +1,139 @@
+2021-08-17 00:00:51 [WARN] [D:/project/go/BattleRabbit/Server/battle_rabbit/network/agent.go:98] ReadLoop ::  EOF
+2021-08-17 00:03:29 [WARN] [D:/project/go/BattleRabbit/Server/battle_rabbit/network/agent.go:98] ReadLoop ::  read tcp 192.168.0.44:19010->192.168.0.176:63947: wsarecv: An existing connection was forcibly closed by the remote host.
+2021-08-17 00:03:45 [WARN] [D:/project/go/BattleRabbit/Server/battle_rabbit/network/agent.go:98] ReadLoop ::  EOF
+2021-08-17 00:05:15 [WARN] [D:/project/go/BattleRabbit/Server/battle_rabbit/network/agent.go:98] ReadLoop ::  EOF
+2021-08-17 00:08:26 [WARN] [D:/project/go/BattleRabbit/Server/battle_rabbit/network/agent.go:98] ReadLoop ::  EOF
+2021-08-17 00:12:29 [WARN] [D:/project/go/BattleRabbit/Server/battle_rabbit/network/agent.go:98] ReadLoop ::  EOF
+2021-08-17 00:13:18 [WARN] [D:/project/go/BattleRabbit/Server/battle_rabbit/network/agent.go:98] ReadLoop ::  EOF
+2021-08-17 00:19:33 [WARN] [D:/project/go/BattleRabbit/Server/battle_rabbit/network/agent.go:98] ReadLoop ::  EOF
+2021-08-17 00:20:05 [WARN] [D:/project/go/BattleRabbit/Server/battle_rabbit/network/agent.go:98] ReadLoop ::  EOF
+2021-08-17 00:20:07 [WARN] [D:/project/go/BattleRabbit/Server/battle_rabbit/network/agent.go:98] ReadLoop ::  EOF
+2021-08-17 00:21:59 [WARN] [D:/project/go/BattleRabbit/Server/battle_rabbit/network/agent.go:98] ReadLoop ::  EOF
+2021-08-17 00:25:48 [EROR] [D:/project/go/BattleRabbit/Server/battle_rabbit/network/agent.go:200] DoMsgHandler =====: runtime error: invalid memory address or nil pointer dereference
+2021-08-17 00:25:48 [EROR] [D:/project/go/BattleRabbit/Server/battle_rabbit/network/agent.go:201] goroutine 47424 [running]:
+runtime/debug.Stack(0x0, 0x0, 0x0)
+	D:/tools/golang/goroot/src/runtime/debug/stack.go:24 +0xac
+battle_rabbit/network.(*Agent).doMsgHandler.func1()
+	D:/project/go/BattleRabbit/Server/battle_rabbit/network/agent.go:201 +0xea
+panic(0x1e92e00, 0x27ffa60)
+	D:/tools/golang/goroot/src/runtime/panic.go:975 +0x4c7
+battle_rabbit/server/game.UpdateTask(0x0, 0x20ff880, 0xc000a8a780, 0xc000b079b0, 0x2, 0x2)
+	D:/project/go/BattleRabbit/Server/battle_rabbit/server/game/task_handler.go:87 +0xe4
+battle_rabbit/server/game.(*Game).TenTimesOpenChest(0xc000117020, 0x20ff880, 0xc000a8a780, 0xc000522ba0)
+	D:/project/go/BattleRabbit/Server/battle_rabbit/server/game/chest_handler.go:249 +0xd3e
+battle_rabbit/network.(*Agent).doMsgHandler(0xc000a9e640, 0xc000a8a780, 0xc000522ba0)
+	D:/project/go/BattleRabbit/Server/battle_rabbit/network/agent.go:211 +0x1d6
+battle_rabbit/network.(*Agent).ReadLoop(0xc000a9e640)
+	D:/project/go/BattleRabbit/Server/battle_rabbit/network/agent.go:116 +0x79f
+battle_rabbit/network.(*Agent).Run(0xc000a9e640, 0x0, 0x0)
+	D:/project/go/BattleRabbit/Server/battle_rabbit/network/agent.go:56 +0x189
+battle_rabbit/network.(*TCPServer).Start.func1(0x20fa9a0, 0xc000a9e640, 0xc000634940)
+	D:/project/go/BattleRabbit/Server/battle_rabbit/network/tcp.go:73 +0xb6
+created by battle_rabbit/network.(*TCPServer).Start
+	D:/project/go/BattleRabbit/Server/battle_rabbit/network/tcp.go:69 +0x545
+
+2021-08-17 00:25:57 [EROR] [D:/project/go/BattleRabbit/Server/battle_rabbit/server/game/chest_handler.go:351] 添加物品失败 : 护甲配置表种数据不存在! ID: armor_26_1
+2021-08-17 00:25:57 [EROR] [D:/project/go/BattleRabbit/Server/battle_rabbit/network/agent.go:200] DoMsgHandler =====: runtime error: invalid memory address or nil pointer dereference
+2021-08-17 00:25:57 [EROR] [D:/project/go/BattleRabbit/Server/battle_rabbit/network/agent.go:201] goroutine 47424 [running]:
+runtime/debug.Stack(0x0, 0x0, 0x0)
+	D:/tools/golang/goroot/src/runtime/debug/stack.go:24 +0xac
+battle_rabbit/network.(*Agent).doMsgHandler.func1()
+	D:/project/go/BattleRabbit/Server/battle_rabbit/network/agent.go:201 +0xea
+panic(0x1e92e00, 0x27ffa60)
+	D:/tools/golang/goroot/src/runtime/panic.go:975 +0x4c7
+battle_rabbit/server/game.UpdateTask(0x0, 0x20ff880, 0xc000a8a780, 0xc000b079b0, 0x2, 0x2)
+	D:/project/go/BattleRabbit/Server/battle_rabbit/server/game/task_handler.go:87 +0xe4
+battle_rabbit/server/game.(*Game).TenTimesOpenChest(0xc000117020, 0x20ff880, 0xc000a8a780, 0xc0000a0820)
+	D:/project/go/BattleRabbit/Server/battle_rabbit/server/game/chest_handler.go:249 +0xd3e
+battle_rabbit/network.(*Agent).doMsgHandler(0xc000a9e640, 0xc000a8a780, 0xc0000a0820)
+	D:/project/go/BattleRabbit/Server/battle_rabbit/network/agent.go:211 +0x1d6
+battle_rabbit/network.(*Agent).ReadLoop(0xc000a9e640)
+	D:/project/go/BattleRabbit/Server/battle_rabbit/network/agent.go:116 +0x79f
+battle_rabbit/network.(*Agent).Run(0xc000a9e640, 0x0, 0x0)
+	D:/project/go/BattleRabbit/Server/battle_rabbit/network/agent.go:56 +0x189
+battle_rabbit/network.(*TCPServer).Start.func1(0x20fa9a0, 0xc000a9e640, 0xc000634940)
+	D:/project/go/BattleRabbit/Server/battle_rabbit/network/tcp.go:73 +0xb6
+created by battle_rabbit/network.(*TCPServer).Start
+	D:/project/go/BattleRabbit/Server/battle_rabbit/network/tcp.go:69 +0x545
+
+2021-08-17 00:28:13 [WARN] [D:/project/go/BattleRabbit/Server/battle_rabbit/network/agent.go:98] ReadLoop ::  EOF
+2021-08-17 00:32:33 [WARN] [D:/project/go/BattleRabbit/Server/battle_rabbit/network/agent.go:98] ReadLoop ::  EOF
+2021-08-17 00:33:18 [WARN] [D:/project/go/BattleRabbit/Server/battle_rabbit/network/agent.go:98] ReadLoop ::  EOF
+2021-08-17 00:34:58 [WARN] [D:/project/go/BattleRabbit/Server/battle_rabbit/network/agent.go:98] ReadLoop ::  EOF
+2021-08-17 00:35:34 [EROR] [D:/project/go/BattleRabbit/Server/battle_rabbit/server/game/chest_handler.go:351] 添加物品失败 : 护甲配置表种数据不存在! ID: armor_16_1
+2021-08-17 00:36:40 [EROR] [D:/project/go/BattleRabbit/Server/battle_rabbit/server/game/chest_handler.go:351] 添加物品失败 : 护甲配置表种数据不存在! ID: armor_26_1
+2021-08-17 00:37:16 [WARN] [D:/project/go/BattleRabbit/Server/battle_rabbit/network/agent.go:98] ReadLoop ::  EOF
+2021-08-17 00:38:21 [WARN] [D:/project/go/BattleRabbit/Server/battle_rabbit/network/agent.go:98] ReadLoop ::  EOF
+2021-08-17 00:44:26 [EROR] [D:/project/go/BattleRabbit/Server/battle_rabbit/server/game/chest_handler.go:351] 添加物品失败 : 护甲配置表种数据不存在! ID: armor_31_1
+2021-08-17 00:44:46 [WARN] [D:/project/go/BattleRabbit/Server/battle_rabbit/network/agent.go:98] ReadLoop ::  EOF
+2021-08-17 00:46:09 [WARN] [D:/project/go/BattleRabbit/Server/battle_rabbit/network/agent.go:98] ReadLoop ::  EOF
+2021-08-17 00:53:26 [WARN] [D:/project/go/BattleRabbit/Server/battle_rabbit/network/agent.go:98] ReadLoop ::  EOF
+2021-08-17 00:54:53 [WARN] [D:/project/go/BattleRabbit/Server/battle_rabbit/network/agent.go:98] ReadLoop ::  EOF
+2021-08-17 00:57:07 [WARN] [D:/project/go/BattleRabbit/Server/battle_rabbit/server/game/chest_handler.go:153] 钻石不足!!
+2021-08-17 01:00:24 [WARN] [D:/project/go/BattleRabbit/Server/battle_rabbit/network/agent.go:98] ReadLoop ::  EOF
+2021-08-17 01:02:59 [WARN] [D:/project/go/BattleRabbit/Server/battle_rabbit/network/agent.go:98] ReadLoop ::  EOF
+2021-08-17 01:08:25 [WARN] [D:/project/go/BattleRabbit/Server/battle_rabbit/network/agent.go:98] ReadLoop ::  EOF
+2021-08-17 01:09:37 [WARN] [D:/project/go/BattleRabbit/Server/battle_rabbit/network/agent.go:98] ReadLoop ::  EOF
+2021-08-17 01:10:58 [WARN] [D:/project/go/BattleRabbit/Server/battle_rabbit/network/agent.go:98] ReadLoop ::  EOF
+2021-08-17 01:13:47 [WARN] [D:/project/go/BattleRabbit/Server/battle_rabbit/network/agent.go:98] ReadLoop ::  EOF
+2021-08-17 01:13:58 [WARN] [D:/project/go/BattleRabbit/Server/battle_rabbit/network/agent.go:98] ReadLoop ::  EOF
+2021-08-17 01:16:33 [WARN] [D:/project/go/BattleRabbit/Server/battle_rabbit/network/agent.go:98] ReadLoop ::  EOF
+2021-08-17 01:17:02 [WARN] [D:/project/go/BattleRabbit/Server/battle_rabbit/network/agent.go:98] ReadLoop ::  EOF
+2021-08-17 01:19:32 [WARN] [D:/project/go/BattleRabbit/Server/battle_rabbit/network/agent.go:98] ReadLoop ::  EOF
+2021-08-17 01:36:08 [WARN] [D:/project/go/BattleRabbit/Server/battle_rabbit/network/agent.go:98] ReadLoop ::  EOF
+2021-08-17 01:42:26 [WARN] [D:/project/go/BattleRabbit/Server/battle_rabbit/network/agent.go:98] ReadLoop ::  read tcp 192.168.0.44:19010->192.168.0.176:65159: wsarecv: An existing connection was forcibly closed by the remote host.
+2021-08-17 01:50:25 [WARN] [D:/project/go/BattleRabbit/Server/battle_rabbit/network/agent.go:98] ReadLoop ::  read tcp 192.168.0.44:19010->192.168.0.176:65194: wsarecv: An existing connection was forcibly closed by the remote host.
+2021-08-17 01:54:10 [WARN] [D:/project/go/BattleRabbit/Server/battle_rabbit/network/agent.go:98] ReadLoop ::  EOF
+2021-08-17 01:56:46 [WARN] [D:/project/go/BattleRabbit/Server/battle_rabbit/network/agent.go:98] ReadLoop ::  EOF
+2021-08-17 02:00:05 [WARN] [D:/project/go/BattleRabbit/Server/battle_rabbit/network/agent.go:98] ReadLoop ::  EOF
+2021-08-17 02:12:18 [WARN] [D:/project/go/BattleRabbit/Server/battle_rabbit/network/agent.go:98] ReadLoop ::  EOF
+2021-08-17 02:12:46 [WARN] [D:/project/go/BattleRabbit/Server/battle_rabbit/network/agent.go:98] ReadLoop ::  EOF
+2021-08-17 02:13:30 [WARN] [D:/project/go/BattleRabbit/Server/battle_rabbit/network/agent.go:98] ReadLoop ::  EOF
+2021-08-17 02:13:55 [WARN] [D:/project/go/BattleRabbit/Server/battle_rabbit/network/agent.go:98] ReadLoop ::  EOF
+2021-08-17 02:14:59 [WARN] [D:/project/go/BattleRabbit/Server/battle_rabbit/network/agent.go:98] ReadLoop ::  read tcp 192.168.0.44:19010->192.168.0.176:65257: wsarecv: An existing connection was forcibly closed by the remote host.
+2021-08-17 02:15:57 [WARN] [D:/project/go/BattleRabbit/Server/battle_rabbit/network/agent.go:98] ReadLoop ::  EOF
+2021-08-17 02:19:59 [WARN] [D:/project/go/BattleRabbit/Server/battle_rabbit/network/agent.go:98] ReadLoop ::  EOF
+2021-08-17 02:26:44 [WARN] [D:/project/go/BattleRabbit/Server/battle_rabbit/network/agent.go:98] ReadLoop ::  EOF
+2021-08-17 02:29:11 [WARN] [D:/project/go/BattleRabbit/Server/battle_rabbit/network/agent.go:98] ReadLoop ::  EOF
+2021-08-17 02:30:40 [EROR] [D:/project/go/BattleRabbit/Server/battle_rabbit/server/game/shop_handler.go:121] 玩家钻石不足 : <nil>
+2021-08-17 02:31:55 [WARN] [D:/project/go/BattleRabbit/Server/battle_rabbit/network/agent.go:98] ReadLoop ::  EOF
+2021-08-17 02:33:37 [WARN] [D:/project/go/BattleRabbit/Server/battle_rabbit/network/agent.go:98] ReadLoop ::  read tcp 192.168.0.44:19010->192.168.0.176:65523: wsarecv: An existing connection was forcibly closed by the remote host.
+2021-08-17 02:36:40 [WARN] [D:/project/go/BattleRabbit/Server/battle_rabbit/network/agent.go:98] ReadLoop ::  EOF
+2021-08-17 02:41:47 [WARN] [D:/project/go/BattleRabbit/Server/battle_rabbit/network/agent.go:98] ReadLoop ::  EOF
+2021-08-17 03:10:55 [WARN] [D:/project/go/BattleRabbit/Server/battle_rabbit/network/agent.go:98] ReadLoop ::  EOF
+2021-08-17 03:51:38 [WARN] [D:/project/go/BattleRabbit/Server/battle_rabbit/network/agent.go:98] ReadLoop ::  read tcp 192.168.0.44:19010->192.168.0.97:34646: wsarecv: An existing connection was forcibly closed by the remote host.
+2021-08-17 04:01:02 [WARN] [D:/project/go/BattleRabbit/Server/battle_rabbit/network/agent.go:98] ReadLoop ::  EOF
+2021-08-17 04:02:24 [WARN] [D:/project/go/BattleRabbit/Server/battle_rabbit/network/agent.go:98] ReadLoop ::  EOF
+2021-08-17 04:08:35 [WARN] [D:/project/go/BattleRabbit/Server/battle_rabbit/network/agent.go:98] ReadLoop ::  EOF
+2021-08-17 04:13:49 [WARN] [D:/project/go/BattleRabbit/Server/battle_rabbit/network/agent.go:98] ReadLoop ::  EOF
+2021-08-17 04:38:26 [WARN] [D:/project/go/BattleRabbit/Server/battle_rabbit/network/agent.go:98] ReadLoop ::  read tcp 192.168.0.44:19010->192.168.0.176:50513: wsarecv: An existing connection was forcibly closed by the remote host.
+2021-08-17 04:40:04 [WARN] [D:/project/go/BattleRabbit/Server/battle_rabbit/network/agent.go:98] ReadLoop ::  EOF
+2021-08-17 04:40:37 [WARN] [D:/project/go/BattleRabbit/Server/battle_rabbit/network/agent.go:98] ReadLoop ::  EOF
+2021-08-17 05:19:42 [WARN] [D:/project/go/BattleRabbit/Server/battle_rabbit/network/agent.go:98] ReadLoop ::  EOF
+2021-08-17 05:23:49 [WARN] [D:/project/go/BattleRabbit/Server/battle_rabbit/network/agent.go:98] ReadLoop ::  EOF
+2021-08-17 05:25:28 [WARN] [D:/project/go/BattleRabbit/Server/battle_rabbit/network/agent.go:98] ReadLoop ::  EOF
+2021-08-17 05:27:26 [WARN] [D:/project/go/BattleRabbit/Server/battle_rabbit/network/agent.go:98] ReadLoop ::  EOF
+2021-08-17 05:35:19 [WARN] [D:/project/go/BattleRabbit/Server/battle_rabbit/network/agent.go:98] ReadLoop ::  EOF
+2021-08-17 05:38:17 [WARN] [D:/project/go/BattleRabbit/Server/battle_rabbit/network/agent.go:98] ReadLoop ::  EOF
+2021-08-17 05:38:42 [WARN] [D:/project/go/BattleRabbit/Server/battle_rabbit/network/agent.go:98] ReadLoop ::  EOF
+2021-08-17 05:45:15 [WARN] [D:/project/go/BattleRabbit/Server/battle_rabbit/network/agent.go:98] ReadLoop ::  EOF
+2021-08-17 05:46:16 [WARN] [D:/project/go/BattleRabbit/Server/battle_rabbit/network/agent.go:98] ReadLoop ::  EOF
+2021-08-17 05:49:24 [WARN] [D:/project/go/BattleRabbit/Server/battle_rabbit/network/agent.go:98] ReadLoop ::  EOF
+2021-08-17 05:52:15 [WARN] [D:/project/go/BattleRabbit/Server/battle_rabbit/network/agent.go:98] ReadLoop ::  EOF
+2021-08-17 05:53:13 [WARN] [D:/project/go/BattleRabbit/Server/battle_rabbit/network/agent.go:98] ReadLoop ::  EOF
+2021-08-17 06:19:41 [WARN] [D:/project/go/BattleRabbit/Server/battle_rabbit/network/agent.go:98] ReadLoop ::  EOF
+2021-08-17 06:25:21 [WARN] [D:/project/go/BattleRabbit/Server/battle_rabbit/network/agent.go:98] ReadLoop ::  EOF
+2021-08-17 06:27:47 [WARN] [D:/project/go/BattleRabbit/Server/battle_rabbit/network/agent.go:98] ReadLoop ::  EOF
+2021-08-17 06:29:11 [WARN] [D:/project/go/BattleRabbit/Server/battle_rabbit/network/agent.go:98] ReadLoop ::  EOF
+2021-08-17 06:31:22 [WARN] [D:/project/go/BattleRabbit/Server/battle_rabbit/network/agent.go:98] ReadLoop ::  read tcp 192.168.0.44:19010->192.168.0.176:51281: wsarecv: An existing connection was forcibly closed by the remote host.
+2021-08-17 06:37:19 [WARN] [D:/project/go/BattleRabbit/Server/battle_rabbit/network/agent.go:98] ReadLoop ::  read tcp 192.168.0.44:19010->192.168.0.176:51320: wsarecv: An existing connection was forcibly closed by the remote host.
+2021-08-17 06:50:20 [WARN] [D:/project/go/BattleRabbit/Server/battle_rabbit/network/agent.go:98] ReadLoop ::  EOF
+2021-08-17 07:01:50 [WARN] [D:/project/go/BattleRabbit/Server/battle_rabbit/network/agent.go:98] ReadLoop ::  EOF
+2021-08-17 07:05:00 [WARN] [D:/project/go/BattleRabbit/Server/battle_rabbit/network/agent.go:98] ReadLoop ::  EOF
+2021-08-17 07:11:34 [WARN] [D:/project/go/BattleRabbit/Server/battle_rabbit/network/agent.go:98] ReadLoop ::  EOF
+2021-08-17 07:58:45 [WARN] [D:/project/go/BattleRabbit/Server/battle_rabbit/network/agent.go:98] ReadLoop ::  EOF
+2021-08-18 10:39:22 [WARN] [D:/project/go/BattleRabbit/Server/GameServer/network/agent.go:98] ReadLoop ::  EOF
+2021-08-18 10:41:26 [WARN] [D:/project/go/BattleRabbit/Server/GameServer/network/agent.go:98] ReadLoop ::  EOF
+2021-08-18 10:41:37 [WARN] [D:/project/go/BattleRabbit/Server/GameServer/network/agent.go:98] ReadLoop ::  EOF
+2021-08-18 10:43:25 [EROR] [D:/project/go/BattleRabbit/Server/GameServer/server/game/sevenday_handler.go:34] 领取失败 : 当天已经领取了
+2021-08-18 10:44:21 [WARN] [D:/project/go/BattleRabbit/Server/GameServer/network/agent.go:98] ReadLoop ::  EOF
