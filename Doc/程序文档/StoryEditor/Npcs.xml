@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<root>
+    <role id='11000'  name='NPC' nick='男主'  />
+	<role id='11001'  name='NPC' nick='女主'  />
+	<role id='11002'  name='NPC' nick='里昂'  />
+	<role id='11003'  name='NPC' nick='感染者'  />
+    <role id='13064' name='player'  nick='报纸残页'  />
+	<role id='13065' name='player'  nick='拯救者1'  />
+	<role id='13066' name='player'  nick='拯救者1'  />
+	<role id='13067' name='player'  nick='拯救者1'  />
+	<role id='13068' name='player'  nick='拯救者1'  />
+</root>

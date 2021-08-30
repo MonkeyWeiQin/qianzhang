@@ -1,0 +1,1 @@
+\Client\GunFire\UnityProject\Assets\HotUpdateResources\TextAsset\Xml

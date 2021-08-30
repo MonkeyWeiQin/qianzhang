@@ -1,0 +1,7 @@
+gameid：21
+dxappid：b7fd666219d34e589862ecbadda36c82
+
+包名：com.g3367.qscl
+
+接口秘钥：810a6c130fc94ad282a1e2b3548b2e68
+支付秘钥：8e01b5b53c6a4bd0b92cea8cd1f5d2c8

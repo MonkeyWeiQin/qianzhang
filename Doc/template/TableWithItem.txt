@@ -1,0 +1,66 @@
+using System;
+using System.Collections.Generic;
+
+#region 模块信息
+// **********************************************************************
+// Copyright (C) 2021 The 战兔科技
+//
+// 文件名(File Name):             [NAME].cs
+// 作者(Author):                  卫四钦
+// 创建时间(CreateTime):           
+// 修改者列表(modifier):
+// 模块描述(Module description):表格管理器
+// **********************************************************************
+#endregion
+[Serializable]
+public class [NAME]
+{
+	public string BinraryPath = "[BINRARYPATH]";
+    public string name;
+
+    private Dictionary<[TYPE], [NAME]Item> dics = null;
+    private List<[NAME]Item> items = new List<[NAME]Item>();
+
+    public List<[NAME]Item> Items
+    {
+        get {
+            return items;
+        }
+    }
+
+    public void Initialize()
+    {
+        dics = new Dictionary<[TYPE], [NAME]Item>();
+        foreach ([NAME]Item item in items)
+        {
+            dics.Add(item.id, item);
+        }
+    }
+
+    public List<[NAME]Item> GetItems()
+    {
+        return items;
+    }
+
+	public void AddItem([NAME]Item item)
+	{
+		items.Add(item);
+	}
+	
+
+    public [NAME]Item GetItemByKey([TYPE] key)
+    {
+        [NAME]Item item = null;
+        if (dics.ContainsKey(key))
+        {
+            dics.TryGetValue(key, out item);
+        }
+        return item;
+    }
+}
+
+[Serializable]
+public class [NAME]Item
+{
+[BODY]
+}

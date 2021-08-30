@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<datas>
+    <data id="1" name="天河" >
+        <page id="1" title="大圣归来">
+            <dialog id="4" role="0" pos="0" text="走走走 我们小手拉小手 走走走...一同去郊游" />
+            <dialog id="2" role="0" pos="1" text="走到哪里吃到哪里，好开心啊啊啊啊" />
+            <dialog id="1" role="0" pos="0" text="从小，我就有一个梦想" />
+            <dialog id="3" role="0" pos="0" text="结果走啦好久好久 饿死了。。。。。" />
+        </page>
+    </data>
+    <data id="3" name="无敌风火轮" >
+        <page id="1" title="飞升">
+            <dialog id="2" role="0" pos="0" text="太神奇了" />
+            <dialog id="1" role="0" pos="0" text="哇啊，风火轮好厉害。。。。" />
+        </page>
+    </data></datas>

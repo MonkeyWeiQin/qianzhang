@@ -1,0 +1,2 @@
+xmlcfg=F:/BattleRabbit/Client/GunFire/UnityProject/Assets/HotUpdateResources/TextAsset/Xml/Storys.xml
+npccfg=F:/BattleRabbit/Client/GunFire/UnityProject/Assets/HotUpdateResources/TextAsset/Xml/Npcs.xml

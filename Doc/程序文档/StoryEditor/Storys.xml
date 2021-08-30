@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<datas>
+    <data id="1" name="城市关卡（第一章）" >
+        <page id="1" title="关卡1_1(开头）">
+            <dialog id="1" role="11000" pos="0" text="该死，我感觉整个人都快散架了。" />
+            <dialog id="2" role="11000" pos="0" text="呼叫黑鹰，请回复。重复，呼叫黑鹰，听到请回复。（通讯中断）" />
+            <dialog id="3" role="11001" pos="1" text="刚才攻击我们的那个身影，那到底是什么玩意？" />
+            <dialog id="4" role="11000" pos="0" text="我只知道除了我们以外，它恐怕让整驾飞机上的东西都完蛋了。" />
+            <dialog id="5" role="11001" pos="1" text="周围有人在往我们这边靠近，不过他们看起来好像有些...不太对劲？" />
+            <dialog id="6" role="11000" pos="0" text="我们是执行特别任务的政府专员特工，我警告你不要再靠近了，否则我有权开枪。" />
+            <dialog id="7" role="11003" pos="1" text="(靠近并发出嘶吼声）" />
+            <dialog id="8" role="11000" pos="0" text="退后！再靠近的话就不是开玩笑了！" />
+        </page>
+        <page id="2" title="关卡1_1(结尾）">
+            <dialog id="1" role="11000" pos="0" text="那些威胁都被消灭掉了，大概。" />
+            <dialog id="2" role="11001" pos="1" text="那真的还是活人吗？" />
+            <dialog id="3" role="11001" pos="1" text="有些事也许没有我们想的那么简单。" />
+            <dialog id="4" role="11000" pos="0" text="所以这不就是我们此行的目的，搞清楚这鬼地方到底发生了什么。" />
+        </page>
+        <page id="3" title="关卡1_3（开头）">
+            <dialog id="1" role="11000" pos="1" text="我觉得我们可能需要一些提示来搞清楚现在是什么状况。" />
+            <dialog id="2" role="11001" pos="1" text="找找附近有没有线索吧，像是报纸、告示或者这类东西都行。" />
+        </page>
+        <page id="4" title="关卡1_3(结尾）">
+            <dialog id="1" role="11001" pos="1" text="你觉得这像是什么？" />
+            <dialog id="2" role="11000" pos="0" text="像是某种东西在影响人们，就跟报纸里说到那样，这很不正常。" />
+            <dialog id="3" role="11001" pos="1" text="如果能够多注意一些周围的可以搜集的资料，它们提供的额外线索说不定对此次调查任务能有帮助。" />
+        </page>
+    </data>
+    <data id="2" name="触发式剧情内容" >
+        <page id="1" title="关卡1_3（报纸内容）">
+            <dialog id="1" role="13064" pos="0" text="短短几日，莱肯市内开始出现许多非自然的暴力事件。更有甚者当街袭击值班警员，造成多名人员受伤。同时市内的各大医院急诊患者剧增，医疗系统正面临空前压力（其余部分缺损，难以辨认）。" />
+        </page>
+    </data></datas>

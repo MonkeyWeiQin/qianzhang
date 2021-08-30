@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<datas>
+    <data id="1" name="新手训练营" >
+        <page id="1" title="新手村1">
+            <dialog id="1" role="11000" pos="0" text="欢迎加入拯救者的行列" />
+            <dialog id="2" role="11000" pos="0" text="现在跟随引导完成新手操作，快速成长" />
+        </page>
+        <page id="2" title="魔鬼训练">
+            <dialog id="1" role="11001" pos="0" text="哈哈哈，快去升级你的英雄，来增加你的输出，达到更好通关" />
+            <dialog id="2" role="13064" pos="0" text="我将义无反顾的冲锋，杀杀杀....." />
+        </page>
+    </data></datas>

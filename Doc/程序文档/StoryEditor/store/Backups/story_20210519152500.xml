@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<datas>
+    <data id="1" name="剧情关卡1" >
+        <page id="1" title="营救老奶奶">
+            <dialog id="1" role="0" pos="0" text="大的事情" />
+            <dialog id="2" role="0" pos="0" text="大苏打" />
+        </page>
+    </data></datas>

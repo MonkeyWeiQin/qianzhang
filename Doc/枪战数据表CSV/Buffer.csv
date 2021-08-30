@@ -1,0 +1,14 @@
+buff编号,名称,图标,模型,buff效果,效果描述,持续时间/秒,掉落有效时间/秒,拾取限制,掉落机率
+string,string,string,string,string,string,int,int,int,int
+id,name,icon,model,effect,info,bufftime,droptime,pickuplimit,probability
+buff01,排弹,buff01,buff01,parallel,主角攻击时增加5条平行弹道，持续20秒,20,240,2,20
+buff02,散弹,buff02,buff02,sector,主角攻击时增加5条扇形弹道，持续20秒,20,240,2,40
+buff03,移速+,buff03,buff03,speed1,主角，英雄的移动速度增加30%，持续20秒,20,240,2,50
+buff04,移速攻速+,buff04,buff04,speed2,主角，英雄的移动速度和攻击速度增加30%，持续20秒,20,240,2,53
+buff05,治疗,buff05,buff05,cure,主角生命值回复1点，满血时不能拾取,0,240,1,67
+buff06,满血治疗,buff06,buff06,bigcure,主角生命值回复至最大值，满血时不能拾取,0,240,1,72
+buff07,护盾,buff07,buff07,shield,主角获得护盾，下一次受到伤害时血量不减,99999,240,2,82
+buff08,地雷,buff08,buff08,mine,"主角每隔3秒在脚下放置1次地雷，敌人移动到地雷位置时地雷爆炸,持续30秒",30,240,2,92
+buff09,机器人,buff09,buff09,robot,召唤1个跟随主角行动的大型机器人，机器人会攻击主角周围出现的敌人，持续30秒,30,240,2,94
+buff10,战车,buff10,buff10,car,主角驾驶战车，无敌状态，可开车碰撞消灭消灭，持续20秒,20,240,2,97
+buff11,坦克,buff11,buff11,tank,主角驾驶坦克，无敌状态，可通过开炮或碰撞消灭敌人，持续20秒,20,240,2,100

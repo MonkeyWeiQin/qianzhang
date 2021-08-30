@@ -1,0 +1,79 @@
+using JEngine.Helper;
+using System.IO;
+using System.Runtime.Serialization;
+using System.Runtime.Serialization.Formatters.Binary;
+using UnityEngine;
+
+#region 模块信息
+// **********************************************************************
+// Copyright (C) 2021 The 战兔科技
+//
+// 文件名(File Name):             TableManager.cs
+// 作者(Author):                  卫四钦
+// 创建时间(CreateTime):           
+// 修改者列表(modifier):
+// 模块描述(Module description):表格管理器
+// **********************************************************************
+#endregion
+public class TableManager : BaseObject
+{
+	private static TableManager instance;
+[DECLARE_TABLES_VARS]
+    public static TableManager Create()
+    {
+        if (instance == null)
+        {
+            instance = new TableManager();
+        }
+        return instance;
+    }
+
+    public override void Initialize()
+    {
+        this.LoadTables();
+    }
+        
+    public T LoadData<T>(string path) where T : class
+    {
+        TextAsset textAsset = XAssetsRes.LoadRes<TextAsset>(path, XAssetsRes.MatchMode.TextAsset);
+        MemoryStream stream = new MemoryStream(textAsset.bytes);
+        IFormatter serializer = new BinaryFormatter();
+        return serializer.Deserialize(stream) as T;
+		
+    }
+	
+	/// <summary>
+    /// 修改表中的数据
+    /// </summary>
+    /// <param name="instance">要修改表的实例对象</param>
+    /// <param name="binraryPath">表byte存储路径</param>
+    /// <returns></returns>
+	public bool ReloadData(object instance,string binraryPath)
+    {
+        if (instance == null) return false;
+        if (File.Exists(binraryPath))
+        {
+            File.Delete(binraryPath);
+        }
+        IFormatter serializer = new BinaryFormatter();
+        using (var saveFile = new FileStream(binraryPath, FileMode.Create, FileAccess.Write))
+        {
+            serializer.Serialize(saveFile, instance);
+        }
+        return true;
+    }
+	
+
+    public void LoadTables() 
+    {
+[LOAD_TABLE_FUNCS]
+    }
+
+    public override void OnUpdate(float deltaTime)
+    {
+    }
+
+    public override void OnDispose()
+    {
+    }
+}

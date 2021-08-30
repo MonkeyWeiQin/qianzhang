@@ -1,0 +1,270 @@
+<!DOCTYPE html><html><head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+            @charset "utf-8";
+            *,
+            *::after,
+            *::before {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+            body {
+                -webkit-font-smoothing: antialiased;
+                -moz-osx-font-smoothing: grayscale;
+                font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Segoe UI", "Helvetica Neue", "PingFang SC", "Noto Sans", "Noto Sans CJK SC", "Microsoft YaHei", "\5FAE\8F6F\96C5\9ED1", sans-serif;
+                font-size: 16px;
+                line-height: 24px;
+                color: #222;
+            }
+            ::selection {
+                background-color: rgba(107, 112, 184, 0.16);
+            }
+            #title {
+                font-size: 36px;
+                line-height: 54px;
+                font-weight: 500;
+            }
+            h1 {
+                margin: 28px 0 0;
+                font-size: 28px;
+                line-height: 42px;
+            }
+            h2 {
+                margin: 24px 0 0;
+                font-size: 24px;
+                line-height: 26px;
+            }
+            h3 {
+                margin: 20px 0 0;
+                font-size: 20px;
+                line-height: 30px;
+            }
+            p {
+                margin: 16px 0 0;
+                line-height: 24px;
+            }
+            blockquote {
+                margin: 16px 0 0;
+                padding: 0 0 0 20px;
+                line-height: 24px;
+                box-shadow: inset 4px 0 0 0 #EEEEEE;
+            }
+            ol,
+            ul {
+                padding: 8px 0 0 32px;
+            }
+            li {
+                margin: 8px 0 0;
+                line-height: 24px;
+            }
+            hr {
+                margin: 16px 0 0;
+                height: 1px;
+                background-color: #e9e9e9;
+                border: none;
+            }
+            img {
+                width: 100%;
+                display: block;
+            }
+            pre {
+                margin: 12px 0 0;
+                border-radius: 4px;
+                padding: 12px;
+                background-color: #f5f5f5;
+                font-size: 14px;
+                white-space: pre-wrap;
+            }
+            code {
+                color: #657B83;
+                font-size: inherit;
+                border-radius: 4px;
+                display: block;
+            }
+            p code,
+            table code {
+                display: inline;
+                padding: 4px;
+                background-color: #f5f5f5;
+            }
+            a,
+            a u {
+                color: rgb(61, 168, 245);
+                font-size: 16px;
+                line-height: 20px;
+                text-decoration: none;
+                cursor: pointer;
+            }
+            a:hover {
+                text-decoration: underline;
+            }
+            table {
+                margin: 32px 0 0;
+                border-left: 1px solid #D8D8D8;
+                border-top: 1px solid #D8D8D8;
+                border-collapse: collapse;
+                border-spacing: 0;
+            }
+            table td {
+                table-layout: fixed;
+                padding: 8px 12px;
+                min-width: 200px;
+                max-width: 1000px;
+                border-right: 1px solid #D8D8D8;
+                border-bottom: 1px solid #D8D8D8;
+            }
+            table a,
+            table blockquote,
+            table code,
+            table h1,
+            table h2,
+            table h3,
+            table li,
+            table p {
+                margin: 0;
+            }
+            table ol,
+            table ul {
+                padding: 0 0 0 30px;
+            }
+            footer {
+                padding: 48px;
+                background-color: #f5f5f5;
+                display: flex;
+                justify-content: center;
+            }
+            footer a {
+                padding-left: 28px;
+                line-height: 24px;
+                height: 24px;
+                color: #808080;
+                background-image: url("https://dn-clients.teambition.net/thoughts/thoughts_logo.svg");
+                background-size: 24px 24px;
+                background-repeat: no-repeat;
+            }
+            #page {
+                max-width: 1024px;
+                min-height: calc(100vh - 120px);
+                margin: 0 auto;
+                padding: 72px;
+            }
+            /* 检查项 */
+            [data-type="checkbox"] {
+                padding-left: 15px;
+            }
+            [data-check="true"],
+            [data-check="false"] {
+                list-style-type: none;
+                padding-left: 0;
+            }
+            [data-check="true"]::before,
+            [data-check="false"]::before {
+                content: "";
+                width: 14px;
+                height: 14px;
+                border-radius: 4px;
+                vertical-align: bottom;
+                display: inline-block;
+                margin: 5px 11px;
+                background-position: 50%;
+                background-repeat: no-repeat;
+                box-shadow: inset 0 0 0 1px#ddd;
+            }
+            [data-check="true"]::before {
+                background-color: #6B70B8;
+                box-shadow: inset 0 0 0 1px #6B70B8;
+                background-image: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyB3aWR0aD0iMTJweCIgaGVpZ2h0PSIxMnB4IiB2aWV3Qm94PSIwIDAgMTIgMTIiIHZlcnNpb249IjEuMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayI+CiAgICA8IS0tIEdlbmVyYXRvcjogU2tldGNoIDU0ICg3NjQ4MCkgLSBodHRwczovL3NrZXRjaGFwcC5jb20gLS0+CiAgICA8dGl0bGU+55S75p2/PC90aXRsZT4KICAgIDxkZXNjPkNyZWF0ZWQgd2l0aCBTa2V0Y2guPC9kZXNjPgogICAgPGcgaWQ9IueUu+advyIgc3Ryb2tlPSJub25lIiBzdHJva2Utd2lkdGg9IjEiIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCI+CiAgICAgICAgPHBvbHlnb24gaWQ9InYiIGZpbGw9IiNGRkZGRkYiIGZpbGwtcnVsZT0ibm9uemVybyIgcG9pbnRzPSIyLjM0NzM1NTA3IDUuOTc5NTQ0MzcgMS42NDkzMzI2MyA2LjY5NTYyMDI1IDQuNTM2MjIwMiA5LjUwOTcyNDczIDEwLjM1MzA5MTMgMy43MDgwMjk4IDkuNjQ2OTA4NzIgMyA0LjUyODE3MzMzIDguMTA1MzgwNjgiPjwvcG9seWdvbj4KICAgIDwvZz4KPC9zdmc+");
+            }
+            /* 块样式 */
+            [data-type="attachment"] a,
+            [data-type="relation"] a,
+            [data-type="embed"] a {
+                font-size: 14px;
+                line-height: 24px;
+                height: 48px;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+                width: 100%;
+                margin: 16px 0 0;
+                display: block;
+                padding: 12px 12px 12px 40px;
+                color: #222!important;
+                border-radius: 4px;
+                transition: 0.3s ease;
+                box-shadow: inset 0 0 0 1px #eeeeee;
+                background-repeat: no-repeat;
+                background-position: 12px 50%;
+            }
+            [data-type="attachment"] a:hover,
+            [data-type="relation"] a:hover,
+            [data-type="embed"] a:hover {
+                text-decoration: none!important;
+                background-color: #f5f5f5;
+            }
+            /* 行内样式 */
+            [data-type="document"],
+            [data-type="file"],
+            [data-type="folder"],
+            [data-type="teambition-task"],
+            [data-type="teambition-file"],
+            [data-type="teambition-folder"],
+            [data-type="teambition-date"],
+            [data-type="DATE"] {
+                background-position: 4px 50%;
+                padding: 0 4px 0 26px;
+                background-repeat: no-repeat;
+            }
+            /* 类型图标 */
+            [data-type="embed"] a {
+                background-image: url("data:image/svg+xml;base64,PHN2ZwogICAgd2lkdGg9IjIwcHgiCiAgICBoZWlnaHQ9IjIwcHgiCiAgICB2aWV3Qm94PSIwIDAgMjAgMjAiCiAgICB2ZXJzaW9uPSIxLjEiCiAgICB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciCiAgICB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayI+CiAgICA8cGF0aAogICAgICAgIGQ9Ik0xMC4wMDAxLDE0LjU2ODQgQzEwLjA4MTEsMTQuNTY4NCAxMC4xNjExLDE0LjU4NDQgMTAuMjM2MSwxNC42MTY0IEwxNC42MDkxLDE2LjQ5MDQgTDE0LjYwOTEsNC4wODg0IEMxNC42MDkxLDMuNTk4NCAxNC4yMTAxLDMuMjAwNCAxMy43MjExLDMuMjAwNCBMNi4yNzkxLDMuMjAwNCBDNS43OTAxLDMuMjAwNCA1LjM5MTEsMy41OTg0IDUuMzkxMSw0LjA4ODQgTDUuMzkxMSwxNi40OTA0IEw5Ljc2NDEsMTQuNjE2NCBDOS44MzkxLDE0LjU4NDQgOS45MTkxLDE0LjU2ODQgMTAuMDAwMSwxNC41Njg0IEwxMC4wMDAxLDE0LjU2ODQgWiBNMTUuMjA5MSwxOC4wMDA0IEMxNS4xMjkxLDE4LjAwMDQgMTUuMDQ4MSwxNy45ODQ0IDE0Ljk3MzEsMTcuOTUyNCBMMTAuMDAwMSwxNS44MjA0IEw1LjAyNzEsMTcuOTUyNCBDNC44NDIxLDE4LjAzMTQgNC42MjgxLDE4LjAxMjQgNC40NjExLDE3LjkwMTQgQzQuMjkyMSwxNy43OTA0IDQuMTkxMSwxNy42MDI0IDQuMTkxMSwxNy40MDA0IEw0LjE5MTEsNC4wODg0IEM0LjE5MTEsMi45Mzc0IDUuMTI4MSwyLjAwMDQgNi4yNzkxLDIuMDAwNCBMMTMuNzIxMSwyLjAwMDQgQzE0Ljg3MjEsMi4wMDA0IDE1LjgwOTEsMi45Mzc0IDE1LjgwOTEsNC4wODg0IEwxNS44MDkxLDE3LjQwMDQgQzE1LjgwOTEsMTcuNjAyNCAxNS43MDgxLDE3Ljc5MDQgMTUuNTM5MSwxNy45MDE0IEMxNS40NDAxLDE3Ljk2NjQgMTUuMzI1MSwxOC4wMDA0IDE1LjIwOTEsMTguMDAwNCBMMTUuMjA5MSwxOC4wMDA0IFoiCiAgICAgICAgaWQ9ImJvb2ttYXJrIgogICAgICAgIGZpbGw9IiNBNkE2QTYiPjwvcGF0aD4KPC9zdmc+");
+            }
+            [data-type="DATE"] {
+                color: #808080;
+                background-image: url("data:image/svg+xml;base64,PHN2ZwogICAgd2lkdGg9IjIwcHgiCiAgICBoZWlnaHQ9IjIwcHgiCiAgICB2aWV3Qm94PSIwIDAgMjAgMjAiCiAgICB2ZXJzaW9uPSIxLjEiCiAgICB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciCiAgICB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayI+CiAgICA8cGF0aAogICAgICAgIGQ9Ik0xNS4yOTQsMy40MTIgQzE2LjM5NCwzLjQxMiAxNy4yOTQsNC4zMTIgMTcuMjk0LDUuNDEyIEwxNy4yOTQsMTYgQzE3LjI5NCwxNy4xIDE2LjM5NCwxOCAxNS4yOTQsMTggTDQuNzA2LDE4IEMzLjYwNiwxOCAyLjcwNiwxNy4xIDIuNzA2LDE2IEwyLjcwNiw1LjQxMiBDMi43MDYsNC4zMTIgMy42MDYsMy40MTIgNC43MDYsMy40MTIgTDYuMTQ2LDMuNDEyIEw2LjE0NiwyLjYgQzYuMTQ2LDIuMjY5IDYuNDE1LDIgNi43NDYsMiBDNy4wNzgsMiA3LjM0NiwyLjI2OSA3LjM0NiwyLjYgTDcuMzQ2LDMuNDEyIEwxMi42NTQsMy40MTIgTDEyLjY1NCwyLjYgQzEyLjY1NCwyLjI2OSAxMi45MjIsMiAxMy4yNTQsMiBDMTMuNTg2LDIgMTMuODU0LDIuMjY5IDEzLjg1NCwyLjYgTDEzLjg1NCwzLjQxMiBMMTUuMjk0LDMuNDEyIFogTTE1LjI5NCwxNi44IEMxNS43MjgsMTYuOCAxNi4wOTQsMTYuNDM0IDE2LjA5NCwxNiBMMTYuMDk0LDguMjgyIEwzLjkwNiw4LjI4MiBMMy45MDYsMTYgQzMuOTA2LDE2LjQzNCA0LjI3MiwxNi44IDQuNzA2LDE2LjggTDE1LjI5NCwxNi44IFogTTQuNzA2LDQuNjEyIEM0LjI3Miw0LjYxMiAzLjkwNiw0Ljk3OCAzLjkwNiw1LjQxMiBMMy45MDYsNy4wODIgTDE2LjA5NCw3LjA4MiBMMTYuMDk0LDUuNDEyIEMxNi4wOTQsNC45NzggMTUuNzI4LDQuNjEyIDE1LjI5NCw0LjYxMiBMMTMuODU0LDQuNjEyIEwxMy44NTQsNS4wMzggQzEzLjg1NCw1LjM2OSAxMy41ODYsNS42MzggMTMuMjU0LDUuNjM4IEMxMi45MjIsNS42MzggMTIuNjU0LDUuMzY5IDEyLjY1NCw1LjAzOCBMMTIuNjU0LDQuNjEyIEw3LjM0Niw0LjYxMiBMNy4zNDYsNS4wMzggQzcuMzQ2LDUuMzY5IDcuMDc4LDUuNjM4IDYuNzQ2LDUuNjM4IEM2LjQxNSw1LjYzOCA2LjE0Niw1LjM2OSA2LjE0Niw1LjAzOCBMNi4xNDYsNC42MTIgTDQuNzA2LDQuNjEyIFoiCiAgICAgICAgZmlsbD0iI0E2QTZBNiI+PC9wYXRoPgo8L3N2Zz4=");
+            }
+            [data-type="attachment"] a {
+                background-image: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyB3aWR0aD0iMjBweCIgaGVpZ2h0PSIyMHB4IiB2aWV3Qm94PSIwIDAgMjAgMjAiIHZlcnNpb249IjEuMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayI+CiAgICA8IS0tIEdlbmVyYXRvcjogU2tldGNoIDU0ICg3NjQ4MCkgLSBodHRwczovL3NrZXRjaGFwcC5jb20gLS0+CiAgICA8dGl0bGU+ZnVqaWFuPC90aXRsZT4KICAgIDxkZXNjPkNyZWF0ZWQgd2l0aCBTa2V0Y2guPC9kZXNjPgogICAgPGRlZnM+CiAgICAgICAgPHBhdGggZD0iTTE0LDQgTDcuNiw0IEM0LjUxMiw0IDIsNi41MTIgMiw5LjYgQzIsMTIuNjg4IDQuNTEyLDE1LjIgNy42LDE1LjIgTDEyLjk5NiwxNS4yIEMxMy4zMjcsMTUuMiAxMy41OTYsMTQuOTMxIDEzLjU5NiwxNC42IEMxMy41OTYsMTQuMjY5IDEzLjMyNywxNCAxMi45OTYsMTQgTDcuNiwxNCBDNS4xNzQsMTQgMy4yLDEyLjAyNiAzLjIsOS42IEMzLjIsNy4xNzQgNS4xNzQsNS4yIDcuNiw1LjIgTDE0LDUuMiBDMTUuNTQ0LDUuMiAxNi44LDYuNDU2IDE2LjgsOCBDMTYuOCw5LjU0NCAxNS41NDQsMTAuOCAxNCwxMC44IEw3LjgxMywxMC44IEM3LjE1MiwxMC44IDYuNjE0LDEwLjI2MiA2LjYxNCw5LjYgQzYuNjE0LDguOTM4IDcuMTUyLDguNCA3LjgxMyw4LjQgTDEyLjk5Niw4LjQgQzEzLjMyNyw4LjQgMTMuNTk2LDguMTMyIDEzLjU5Niw3LjggQzEzLjU5Niw3LjQ2OSAxMy4zMjcsNy4yIDEyLjk5Niw3LjIgTDcuODEzLDcuMiBDNi40OSw3LjIgNS40MTQsOC4yNzcgNS40MTQsOS42IEM1LjQxNCwxMC45MjMgNi40OSwxMiA3LjgxMywxMiBMMTQsMTIgQzE2LjIwNiwxMiAxOCwxMC4yMDYgMTgsOCBDMTgsNS43OTQgMTYuMjA2LDQgMTQsNCBMMTQsNCBaIiBpZD0icGF0aC0xIj48L3BhdGg+CiAgICA8L2RlZnM+CiAgICA8ZyBpZD0iZnVqaWFuIiBzdHJva2U9Im5vbmUiIHN0cm9rZS13aWR0aD0iMSIgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIj4KICAgICAgICA8bWFzayBpZD0ibWFzay0yIiBmaWxsPSJ3aGl0ZSI+CiAgICAgICAgICAgIDx1c2UgeGxpbms6aHJlZj0iI3BhdGgtMSI+PC91c2U+CiAgICAgICAgPC9tYXNrPgogICAgICAgIDx1c2UgaWQ9Imljb24tcGFwZXJjbGlwIiBmaWxsPSIjQTZBNkE2IiB4bGluazpocmVmPSIjcGF0aC0xIj48L3VzZT4KICAgIDwvZz4KPC9zdmc+");
+            }
+            [data-type="document"] {
+                color: #808080;
+                background-image: url("data:image/svg+xml;base64,PHN2ZwogICAgd2lkdGg9IjIwcHgiCiAgICBoZWlnaHQ9IjIwcHgiCiAgICB2aWV3Qm94PSIwIDAgMjAgMjAiCiAgICB2ZXJzaW9uPSIxLjEiCiAgICB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciCiAgICB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayI+CiAgICA8cGF0aAogICAgICAgIGQ9Ik0xMS4xMDA1MDUxLDIgTDE3LDcuODk5NDk0OTQgTDE3LDE2IEMxNywxNy4xMDQ1Njk1IDE2LjEwNDU2OTUsMTggMTUsMTggTDUsMTggQzMuODk1NDMwNSwxOCAzLDE3LjEwNDU2OTUgMywxNiBMMyw0IEMzLDIuODk1NDMwNSAzLjg5NTQzMDUsMiA1LDIgTDExLjEwMDUwNTEsMiBaIgogICAgICAgIGlkPSJQYXRoIgogICAgICAgIGZpbGwtb3BhY2l0eT0iMC4zIgogICAgICAgIGZpbGw9IiM2QjcwQjgiPjwvcGF0aD4KICAgIDxwYXRoCiAgICAgICAgZD0iTTE3LDggTDEzLDggQzExLjg5NTQzMDUsOCAxMSw3LjEwNDU2OTUgMTEsNiBMMTEsMiBMMTEuMTAwNTA1MSwyIEwxNyw3Ljg5OTQ5NDk0IEwxNyw4IFoiCiAgICAgICAgaWQ9IlBhdGgiCiAgICAgICAgZmlsbD0iIzZCNzBCOCI+PC9wYXRoPgogICAgPHJlY3QKICAgICAgICBpZD0iZG9jaWNvbi90aG91Z2h0LWRvYyIKICAgICAgICBmaWxsPSIjNkI3MEI4IgogICAgICAgIHg9IjUuNSIKICAgICAgICB5PSIxMSIKICAgICAgICB3aWR0aD0iOSIKICAgICAgICBoZWlnaHQ9IjEuNiIKICAgICAgICByeD0iMC44Ij48L3JlY3Q+CiAgICA8cmVjdAogICAgICAgIGlkPSJkb2NpY29uL3Rob3VnaHQtZG9jIgogICAgICAgIGZpbGw9IiM2QjcwQjgiCiAgICAgICAgeD0iNS41IgogICAgICAgIHk9IjE0IgogICAgICAgIHdpZHRoPSI0IgogICAgICAgIGhlaWdodD0iMS42IgogICAgICAgIHJ4PSIwLjgiPjwvcmVjdD4KPC9zdmc+");
+            }
+            [data-type="file"] {
+                color: #808080;
+                background-image: url("data:image/svg+xml;base64,PHN2ZwogICAgd2lkdGg9IjIwcHgiCiAgICBoZWlnaHQ9IjIwcHgiCiAgICB2aWV3Qm94PSIwIDAgMjAgMjAiCiAgICB2ZXJzaW9uPSIxLjEiCiAgICB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciCiAgICB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayI+CiAgICA8cGF0aAogICAgICAgIGQ9Ik0xMS4xMDA1MDUxLDIgTDE3LDcuODk5NDk0OTQgTDE3LDE2IEMxNywxNy4xMDQ1Njk1IDE2LjEwNDU2OTUsMTggMTUsMTggTDUsMTggQzMuODk1NDMwNSwxOCAzLDE3LjEwNDU2OTUgMywxNiBMMyw0IEMzLDIuODk1NDMwNSAzLjg5NTQzMDUsMiA1LDIgTDExLjEwMDUwNTEsMiBaIgogICAgICAgIGlkPSJQYXRoIgogICAgICAgIGZpbGwtb3BhY2l0eT0iMC4zIgogICAgICAgIGZpbGw9IiM2QjcwQjgiPjwvcGF0aD4KICAgIDxwYXRoCiAgICAgICAgZD0iTTE3LDggTDEzLDggQzExLjg5NTQzMDUsOCAxMSw3LjEwNDU2OTUgMTEsNiBMMTEsMiBMMTEuMTAwNTA1MSwyIEwxNyw3Ljg5OTQ5NDk0IEwxNyw4IFoiCiAgICAgICAgaWQ9IlBhdGgiCiAgICAgICAgZmlsbD0iIzZCNzBCOCI+PC9wYXRoPgo8L3N2Zz4=");
+            }
+            [data-type="folder"] {
+                color: #808080;
+                background-image: url("data:image/svg+xml;base64,PHN2ZwogICAgd2lkdGg9IjIwcHgiCiAgICBoZWlnaHQ9IjIwcHgiCiAgICB2aWV3Qm94PSIwIDAgMjAgMjAiCiAgICB2ZXJzaW9uPSIxLjEiCiAgICB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciCiAgICB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayI+CiAgICA8cGF0aAogICAgICAgIGQ9Ik0xNi41LDUgQzE3LjYwNDU2OTUsNSAxOC41LDUuODk1NDMwNSAxOC41LDcgTDE4LjUsOCBMMS41LDggQzEuNSw3LjM3MDczNTg5IDEuNSw2LjM3MDczNTg5IDEuNSw1IEMxLjUsMy44OTU0MzA1IDIuMzk1NDMwNSwzIDMuNSwzIEw3LjI3NjQ2OTQ1LDMgQzcuNTYyNDk1NDcsMyA3LjgzNDgzMDg0LDMuMTIyNDc4ODEgOC4wMjQ2MTgwMywzLjMzNjQ2ODc3IEw5LjUsNSBMMTYuNSw1IFoiCiAgICAgICAgaWQ9ImZvbGRlcmljb24vdGhvdWdodC1mb2xkZXIiCiAgICAgICAgZmlsbD0iIzZCNzBCOCI+PC9wYXRoPgogICAgPHBhdGgKICAgICAgICBkPSJNMS41LDggTDE4LjUsOCBMMTguNSwxNSBDMTguNSwxNi4xMDQ1Njk1IDE3LjYwNDU2OTUsMTcgMTYuNSwxNyBMMy41LDE3IEMyLjM5NTQzMDUsMTcgMS41LDE2LjEwNDU2OTUgMS41LDE1IEwxLjUsOCBaIgogICAgICAgIGlkPSJmb2xkZXJpY29uL3Rob3VnaHQtZm9sZGVyIgogICAgICAgIGZpbGwtb3BhY2l0eT0iMC4zIgogICAgICAgIGZpbGw9IiM2QjcwQjgiPjwvcGF0aD4KPC9zdmc+");
+            }
+            [data-type="teambition-task"] {
+                color: #808080;
+                background-image: url("data:image/svg+xml;base64,PHN2ZwogICAgd2lkdGg9IjIwcHgiCiAgICBoZWlnaHQ9IjIwcHgiCiAgICB2aWV3Qm94PSIwIDAgMjAgMjAiCiAgICB2ZXJzaW9uPSIxLjEiCiAgICB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciCiAgICB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayI+CiAgICA8cmVjdAogICAgICAgIGlkPSJ0YXNraWNvbi90Yi10YXNrIgogICAgICAgIGZpbGwtb3BhY2l0eT0iMC4zIgogICAgICAgIGZpbGw9IiMzREE4RjUiCiAgICAgICAgeD0iMyIKICAgICAgICB5PSIzIgogICAgICAgIHdpZHRoPSIxNCIKICAgICAgICBoZWlnaHQ9IjE0IgogICAgICAgIHJ4PSIyIj48L3JlY3Q+CiAgICA8cGF0aAogICAgICAgIGQ9Ik05Ljk0OTAyNzg5LDEwLjg3MDMzMTkgTDE3LjQzNjE4NTMsMy40MzI0NTAwNCBDMTcuNzQ5NjM0NSwzLjEyMTA2Mzc2IDE4LjI1NjE2MzcsMy4xMjI3MzYwOSAxOC41Njc1NSwzLjQzNjE4NTI4IEMxOC44Nzg5MzYyLDMuNzQ5NjM0NDcgMTguODc3MjYzOSw0LjI1NjE2MzY5IDE4LjU2MzgxNDcsNC41Njc1NDk5NiBMMTAuNTEwODE1MiwxMi41Njc1NSBDMTAuMTk4MDMzNywxMi44NzgyNzI5IDkuNjkyODE2MjcsMTIuODc3MzY2MiA5LjM4MTE1MjE1LDEyLjU2NTUyMjUgTDYuNDM0MTUxNzEsOS42MTY4MjQ0NyBDNi4xMjE4MjIyNSw5LjMwNDMxNTA5IDYuMTIxOTY4MSw4Ljc5Nzc4MzEzIDYuNDM0NDc3NDgsOC40ODU0NTM2NyBDNi43NDY5ODY4Niw4LjE3MzEyNDIxIDcuMjUzNTE4ODIsOC4xNzMyNzAwNiA3LjU2NTg0ODI5LDguNDg1Nzc5NDQgTDkuOTQ5MDI3ODksMTAuODcwMzMxOSBaIgogICAgICAgIGlkPSJQYXRoIgogICAgICAgIGZpbGw9IiMzREE4RjUiCiAgICAgICAgZmlsbC1ydWxlPSJub256ZXJvIj48L3BhdGg+Cjwvc3ZnPg==");
+            }
+            [data-type="teambition-file"] {
+                color: #808080;
+                background-image: url("data:image/svg+xml;base64,PHN2ZwogICAgd2lkdGg9IjIwcHgiCiAgICBoZWlnaHQ9IjIwcHgiCiAgICB2aWV3Qm94PSIwIDAgMjAgMjAiCiAgICB2ZXJzaW9uPSIxLjEiCiAgICB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciCiAgICB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayI+CiAgICA8cGF0aAogICAgICAgIGQ9Ik0xMS4xMDA1MDUxLDIgTDE3LDcuODk5NDk0OTQgTDE3LDE2IEMxNywxNy4xMDQ1Njk1IDE2LjEwNDU2OTUsMTggMTUsMTggTDUsMTggQzMuODk1NDMwNSwxOCAzLDE3LjEwNDU2OTUgMywxNiBMMyw0IEMzLDIuODk1NDMwNSAzLjg5NTQzMDUsMiA1LDIgTDExLjEwMDUwNTEsMiBaIgogICAgICAgIGlkPSJQYXRoIgogICAgICAgIGZpbGwtb3BhY2l0eT0iMC4zIgogICAgICAgIGZpbGw9IiMzREE4RjUiPjwvcGF0aD4KICAgIDxwYXRoCiAgICAgICAgZD0iTTE3LDggTDEzLDggQzExLjg5NTQzMDUsOCAxMSw3LjEwNDU2OTUgMTEsNiBMMTEsMiBMMTEuMTAwNTA1MSwyIEwxNyw3Ljg5OTQ5NDk0IEwxNyw4IFoiCiAgICAgICAgaWQ9IlBhdGgiCiAgICAgICAgZmlsbD0iIzNEQThGNSI+PC9wYXRoPgo8L3N2Zz4=");
+            }
+            [data-type="teambition-folder"] {
+                color: #808080;
+                background-image: url("data:image/svg+xml;base64,PHN2ZwogICAgd2lkdGg9IjIwcHgiCiAgICBoZWlnaHQ9IjIwcHgiCiAgICB2aWV3Qm94PSIwIDAgMjAgMjAiCiAgICB2ZXJzaW9uPSIxLjEiCiAgICB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciCiAgICB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayI+CiAgICA8cGF0aAogICAgICAgIGQ9Ik0xNi41LDUgQzE3LjYwNDU2OTUsNSAxOC41LDUuODk1NDMwNSAxOC41LDcgTDE4LjUsOCBMMS41LDggQzEuNSw3LjM3MDczNTg5IDEuNSw2LjM3MDczNTg5IDEuNSw1IEMxLjUsMy44OTU0MzA1IDIuMzk1NDMwNSwzIDMuNSwzIEw3LjI3NjQ2OTQ1LDMgQzcuNTYyNDk1NDcsMyA3LjgzNDgzMDg0LDMuMTIyNDc4ODEgOC4wMjQ2MTgwMywzLjMzNjQ2ODc3IEw5LjUsNSBMMTYuNSw1IFoiCiAgICAgICAgaWQ9ImZvbGRlcmljb24vdGItZm9sZGVyIgogICAgICAgIGZpbGw9IiMzREE4RjUiPjwvcGF0aD4KICAgIDxwYXRoCiAgICAgICAgZD0iTTEuNSw4IEwxOC41LDggTDE4LjUsMTUgQzE4LjUsMTYuMTA0NTY5NSAxNy42MDQ1Njk1LDE3IDE2LjUsMTcgTDMuNSwxNyBDMi4zOTU0MzA1LDE3IDEuNSwxNi4xMDQ1Njk1IDEuNSwxNSBMMS41LDggWiIKICAgICAgICBpZD0iZm9sZGVyaWNvbi90Yi1mb2xkZXIiCiAgICAgICAgZmlsbC1vcGFjaXR5PSIwLjMiCiAgICAgICAgZmlsbD0iIzNEQThGNSI+PC9wYXRoPgo8L3N2Zz4=");
+            }
+            [data-type="teambition-date"] {
+                color: #808080;
+                background-image: url("data:image/svg+xml;base64,PHN2ZwogICAgd2lkdGg9IjIwcHgiCiAgICBoZWlnaHQ9IjIwcHgiCiAgICB2aWV3Qm94PSIwIDAgMjAgMjAiCiAgICB2ZXJzaW9uPSIxLjEiCiAgICB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciCiAgICB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayI+CiAgICA8cmVjdAogICAgICAgIGlkPSJkYXRlaWNvbi90Yi1kYXRlIgogICAgICAgIGZpbGwtb3BhY2l0eT0iMC4zIgogICAgICAgIGZpbGw9IiMzREE4RjUiCiAgICAgICAgeD0iMiIKICAgICAgICB5PSI0IgogICAgICAgIHdpZHRoPSIxNiIKICAgICAgICBoZWlnaHQ9IjEzIgogICAgICAgIHJ4PSIyIj48L3JlY3Q+CiAgICA8cGF0aAogICAgICAgIGQ9Ik00LDQgTDE2LDQgQzE3LjEwNDU2OTUsNCAxOCw0Ljg5NTQzMDUgMTgsNiBMMTgsOCBMMiw4IEwyLDYgQzIsNC44OTU0MzA1IDIuODk1NDMwNSw0IDQsNCBaIgogICAgICAgIGlkPSJkYXRlaWNvbi90Yi1kYXRlIgogICAgICAgIGZpbGw9IiMzREE4RjUiPjwvcGF0aD4KICAgIDxwYXRoCiAgICAgICAgZD0iTTYuNiwyIEw2LjYsMiBDNy4wNDE4Mjc4LDIgNy40LDIuMzU4MTcyMiA3LjQsMi44IEw3LjQsNiBMNS44LDYgTDUuOCwyLjggQzUuOCwyLjM1ODE3MjIgNi4xNTgxNzIyLDIgNi42LDIgWiIKICAgICAgICBpZD0iZGF0ZWljb24vdGItZGF0ZSIKICAgICAgICBmaWxsPSIjM0RBOEY1Ij48L3BhdGg+CiAgICA8cGF0aAogICAgICAgIGQ9Ik0xMy40LDIgTDEzLjQsMiBDMTMuODQxODI3OCwyIDE0LjIsMi4zNTgxNzIyIDE0LjIsMi44IEwxNC4yLDYgTDEyLjYsNiBMMTIuNiwyLjggQzEyLjYsMi4zNTgxNzIyIDEyLjk1ODE3MjIsMiAxMy40LDIgWiIKICAgICAgICBpZD0iZGF0ZWljb24vdGItZGF0ZSIKICAgICAgICBmaWxsPSIjM0RBOEY1Ij48L3BhdGg+Cjwvc3ZnPg==");
+            }
+        </style>
+    <title>Game3367SDKv2.3.5.3接入文档</title></head>
+    <body>
+        <div id="page"><div id="title">Game3367SDKv2.3.5.3接入文档</div><h1 data-key="603486cb4cc5830001260f06" data-type="header-one"><strong><span style="color: #24292E">Game</span></strong>3367<strong><span style="color: #24292E">SDK.aar</span></strong></h1><h2 data-key="603486cb4cc5830001260f08" data-type="header-two">配置</h2><h3 data-key="603486cb4cc5830001260f0a" data-type="header-three">1.<strong>需配置支持版本</strong></h3><p data-key="603486cb4cc5830001260f0c" data-type="paragraph"><span style="color: #333333"><span style="background: #F6F8FA">app/build.gradle 文件中</span></span></p><pre data-key="603486cb4cc5830001260f0e" data-type="code-wrapper"><code data-key="thoughts-1752721" data-type="code-block">minSdkVersion 21</code><code data-key="thoughts-1752722" data-type="code-block"></code><code data-key="thoughts-1752723" data-type="code-block">targetSdkVersion 28</code></pre><p data-key="603486cb4cc5830001260f10" data-type="paragraph">添加占位：</p><pre data-key="603486cb4cc5830001260f12" data-type="code-wrapper"><code data-key="thoughts-1752724" data-type="code-block">manifestPlaceholders.put("APPLOG_SCHEME", "rangersapplog.byAx6uYt".toLowerCase())</code><code data-key="thoughts-1752725" data-type="code-block"> </code></pre><pre data-key="603486cb4cc5830001260f14" data-type="code-wrapper"><code data-key="thoughts-1752726" data-type="code-block"></code><code data-key="thoughts-1752727" data-type="code-block"></code><code data-key="thoughts-1752728" data-type="code-block">android {</code><code data-key="thoughts-1752729" data-type="code-block">    ...</code><code data-key="thoughts-1752730" data-type="code-block">    defaultConfig {</code><code data-key="thoughts-1752731" data-type="code-block">        targetSdkVersion 28</code><code data-key="thoughts-1752732" data-type="code-block">        minSdkVersion 21</code><code data-key="thoughts-1752733" data-type="code-block">       ...</code><code data-key="thoughts-1752734" data-type="code-block">        manifestPlaceholders.put("APPLOG_SCHEME", "rangersapplog.byAx6uYt".toLowerCase())</code><code data-key="thoughts-1752735" data-type="code-block">       ...</code><code data-key="thoughts-1752736" data-type="code-block">		ndk {</code><code data-key="thoughts-1752737" data-type="code-block">            abiFilters 'armeabi-v7a', 'x86'</code><code data-key="thoughts-1752738" data-type="code-block">        }</code><code data-key="thoughts-1752739" data-type="code-block">    }</code></pre><h3 data-key="603486cb4cc5830001260f16" data-type="header-three">2.<strong>需配置支持AndroidX</strong></h3><p data-key="603486cb4cc5830001260f18" data-type="paragraph"><span style="color: #333333"><span style="background: #F6F8FA">gradle.properties 文件配置</span></span></p><p data-key="603486cb4cc5830001260f1a" data-type="paragraph">支持AndroidX</p><p data-key="603486cb4cc5830001260f1c" data-type="paragraph">支持java1.8</p><pre data-key="603486cb4cc5830001260f1e" data-type="code-wrapper"><code data-key="thoughts-1752740" data-type="code-block">android.useAndroidX=true</code><code data-key="thoughts-1752741" data-type="code-block"></code><code data-key="thoughts-1752742" data-type="code-block">android.enableJetifier=true</code></pre><pre data-key="603486cb4cc5830001260f20" data-type="code-wrapper"><code data-key="thoughts-1752743" data-type="code-block">compileOptions {</code><code data-key="thoughts-1752744" data-type="code-block">    sourceCompatibility JavaVersion.VERSION_1_8</code><code data-key="thoughts-1752745" data-type="code-block">    targetCompatibility JavaVersion.VERSION_1_8</code><code data-key="thoughts-1752746" data-type="code-block">}</code></pre><h3 data-key="603486cb4cc5830001260f22" data-type="header-three">3.需引用依赖</h3><p data-key="603486cb4cc5830001260f24" data-type="paragraph"><span style="color: #008080"><span style="background: #F6F8FA">1.</span></span><span style="color: #333333"><span style="background: #F6F8FA"> 引入G3367SDK库 aar库</span></span></p><p data-key="603486cb4cc5830001260f26" data-type="paragraph"><span style="color: #008080"><span style="background: #F6F8FA">2.</span></span><span style="color: #333333"><span style="background: #F6F8FA">依赖库app/build.gradle </span></span></p><pre data-key="603486cb4cc5830001260f28" data-type="code-wrapper"><code data-key="thoughts-1752747" data-type="code-block">implementation 'org.greenrobot:eventbus:3.0.0'</code><code data-key="thoughts-1752748" data-type="code-block">implementation "androidx.work:work-runtime:2.0.1"</code><code data-key="thoughts-1752749" data-type="code-block">implementation "io.reactivex.rxjava3:rxjava:3.0.3"</code><code data-key="thoughts-1752750" data-type="code-block">implementation 'io.reactivex.rxjava3:rxandroid:3.0.0'</code><code data-key="thoughts-1752751" data-type="code-block">implementation 'com.dianping.android.sdk:logan:1.2.4'</code><code data-key="thoughts-1752752" data-type="code-block">implementation 'androidx.appcompat:appcompat:1.2.0'</code><code data-key="thoughts-1752753" data-type="code-block">implementation 'com.androidx.support:recyclerview-v7:28.0.0'</code><code data-key="thoughts-1752754" data-type="code-block">implementation 'com.squareup.retrofit2:retrofit:2.0.2'</code><code data-key="thoughts-1752755" data-type="code-block">implementation 'com.squareup.retrofit2:converter-gson:2.0.2' </code></pre><p data-key="603486cb4cc5830001260f2a" data-type="paragraph"><span style="color: #008080"><span style="background: #F6F8FA">3.</span></span><span style="color: #333333"><span style="background: #F6F8FA">根据libs目录下选择需要支持的 ABI 构架</span></span></p><p data-key="603486cb4cc5830001260f2c" data-type="paragraph"><span style="color: #333333"><span style="background: #F6F8FA">    ndk {</span></span></p><p data-key="603486cb4cc5830001260f2e" data-type="paragraph"><span style="color: #333333"><span style="background: #F6F8FA">        abiFilters </span></span><span style="color: #DD1144"><span style="background: #F6F8FA">'arm64-v8a'</span></span><span style="color: #333333"><span style="background: #F6F8FA">,</span></span><span style="color: #DD1144"><span style="background: #F6F8FA">'armeabi'</span></span><span style="color: #333333"><span style="background: #F6F8FA">,</span></span><span style="color: #DD1144"><span style="background: #F6F8FA">'armeabi-v7a'</span></span><span style="color: #333333"><span style="background: #F6F8FA">,</span></span><span style="color: #DD1144"><span style="background: #F6F8FA">'x86'</span></span><span style="color: #333333"><span style="background: #F6F8FA">,</span></span><span style="color: #DD1144"><span style="background: #F6F8FA">'x86_64'</span></span></p><p data-key="603486cb4cc5830001260f30" data-type="paragraph"><span style="color: #333333"><span style="background: #F6F8FA">    }</span></span></p><p data-key="603486cb4cc5830001260f32" data-type="paragraph"><span style="color: #333333"><span style="background: #F6F8FA">最终效果</span></span></p><img data-key="603486cb4cc5830001260f34" data-type="image" src="./static/603486cb4cc5830001260f34.png" alt="image.png"><p data-key="603486cb4cc5830001260f36" data-type="paragraph">3.需配置<span style="color: #24292E">AndroidManifest.xml</span></p><p data-key="603486cb4cc5830001260f38" data-type="paragraph"><span style="color: #24292E">&lt;Activity&gt; 节点添加横竖屏切换监听</span></p><pre data-key="603486cb4cc5830001260f3a" data-type="code-wrapper"><code data-key="thoughts-1752756" data-type="code-block">android:configChanges="orientation|keyboardHidden|navigation|screenSize"&gt;</code></pre><p data-key="603486cb4cc5830001260f3c" data-type="paragraph"><span style="color: #24292E">如下图：</span></p><pre data-key="603486cb4cc5830001260f3e" data-type="code-wrapper"><code data-key="thoughts-1752757" data-type="code-block">        &lt;activity</code><code data-key="thoughts-1752758" data-type="code-block">            android:name="com.demo.G3367SDKdemo.MainActivity"</code><code data-key="thoughts-1752759" data-type="code-block">            android:configChanges="orientation|keyboardHidden|navigation|screenSize"&gt;</code><code data-key="thoughts-1752760" data-type="code-block">            &lt;intent-filter&gt;</code><code data-key="thoughts-1752761" data-type="code-block">                &lt;action android:name="android.intent.action.MAIN" /&gt;</code><code data-key="thoughts-1752762" data-type="code-block">                &lt;category android:name="android.intent.category.LAUNCHER" /&gt;</code><code data-key="thoughts-1752763" data-type="code-block">            &lt;/intent-filter&gt;</code><code data-key="thoughts-1752764" data-type="code-block">        &lt;/activity&gt;</code></pre><p data-key="603486cb4cc5830001260f40" data-type="paragraph"></p><p data-key="603486cb4cc5830001260f42" data-type="paragraph">4.需支持http</p><p data-key="603486cb4cc5830001260f44" data-type="paragraph">AppliCation节点添加</p><img data-key="603486cb4cc5830001260f46" data-type="image" src="./static/603486cb4cc5830001260f46.png" alt="image.png"><pre data-key="603486cb4cc5830001260f48" data-type="code-wrapper"><code data-key="thoughts-1752765" data-type="code-block">android:usesCleartextTraffic="true"</code></pre><pre data-key="603486cb4cc5830001260f4a" data-type="code-wrapper"><code data-key="thoughts-1752766" data-type="code-block">&lt;uses-library</code><code data-key="thoughts-1752767" data-type="code-block">    android:name="org.apache.http.legacy"</code><code data-key="thoughts-1752768" data-type="code-block">    android:required="false" /&gt;</code></pre><p data-key="603486cb4cc5830001260f4c" data-type="paragraph"></p><p data-key="603486cb4cc5830001260f4e" data-type="paragraph">5.需配置静态权限</p><pre data-key="603486cb4cc5830001260f50" data-type="code-wrapper"><code data-key="thoughts-1752769" data-type="code-block"></code><code data-key="thoughts-1752770" data-type="code-block">&lt;uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES" /&gt;</code><code data-key="thoughts-1752771" data-type="code-block">&lt;!--获取网络权限  说明：此权限是玩家能与其他玩家进行愉快的组队,对战的前提条件 --&gt;</code><code data-key="thoughts-1752772" data-type="code-block">&lt;uses-permission android:name="android.permission.INTERNET" /&gt;</code><code data-key="thoughts-1752773" data-type="code-block"></code><code data-key="thoughts-1752774" data-type="code-block">&lt;!--获取网络状态权限  说明：此权限是玩家能与其他玩家进行愉快的组队,对战的前提条件 --&gt;</code><code data-key="thoughts-1752775" data-type="code-block">&lt;uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" /&gt;</code><code data-key="thoughts-1752776" data-type="code-block">&lt;uses-permission android:name="android.permission.ACCESS_WIFI_STATE" /&gt;</code><code data-key="thoughts-1752777" data-type="code-block"></code><code data-key="thoughts-1752778" data-type="code-block">&lt;!--允许应用读取存储的内容  说明：用于 读取/缓存 游戏信息,账户信息 --&gt;</code><code data-key="thoughts-1752779" data-type="code-block">&lt;uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" /&gt;</code><code data-key="thoughts-1752780" data-type="code-block">&lt;uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" /&gt;</code><code data-key="thoughts-1752781" data-type="code-block"></code><code data-key="thoughts-1752782" data-type="code-block">&lt;!--允许获取手机信息  说明：为了帐号安全我们会跟踪电话状态进行安全校验,保证用户帐号的安全 --&gt;</code><code data-key="thoughts-1752783" data-type="code-block">&lt;uses-permission android:name="android.permission.READ_PHONE_STATE" /&gt;</code></pre><p data-key="603486cb4cc5830001260f52" data-type="paragraph">6.需配置文件提供者</p><pre data-key="603486cb4cc5830001260f54" data-type="code-wrapper"><code data-key="thoughts-1752784" data-type="code-block">&lt;provider</code><code data-key="thoughts-1752785" data-type="code-block">    android:name="androidx.core.content.FileProvider"</code><code data-key="thoughts-1752786" data-type="code-block">    android:authorities="${applicationId}.provider"</code><code data-key="thoughts-1752787" data-type="code-block">    android:exported="false"</code><code data-key="thoughts-1752788" data-type="code-block">    android:grantUriPermissions="true"&gt;</code><code data-key="thoughts-1752789" data-type="code-block">    &lt;meta-data</code><code data-key="thoughts-1752790" data-type="code-block">        android:name="android.support.FILE_PROVIDER_PATHS"</code><code data-key="thoughts-1752791" data-type="code-block">        android:resource="@xml/file_paths" /&gt;</code><code data-key="thoughts-1752792" data-type="code-block">&lt;/provider&gt;</code></pre><h2 data-key="603486cb4cc5830001260f56" data-type="header-two">调试</h2><h3 data-key="603486cb4cc5830001260f58" data-type="header-three"><strong><span style="color: #6A737D">1. G3367SDK初始化</span></strong></h3><p data-key="603486cb4cc5830001260f5a" data-type="paragraph"><span style="color: #24292E">Application中调用</span></p><p data-key="603486cb4cc5830001260f5c" data-type="paragraph"><strong><span style="color: #6A737D">&gt;正式服</span></strong></p><p data-key="603486cb4cc5830001260f5e" data-type="paragraph">平台申请<code>gameid</code></p><p data-key="603486cb4cc5830001260f60" data-type="paragraph">需经过sigGameID签名得到真实<code>gameSigid</code> </p><p data-key="603486cb4cc5830001260f62" data-type="paragraph">如：gameid为1；则真实id为GameSigIdUtils.sigGameID(this, “1”)</p><p data-key="603486cb4cc5830001260f64" data-type="paragraph">*<span style="color: #fa8c15"><u><strong>平台会对包进行二次包，gameSigid将会修改，如果需要【校验登录】功能，开发需用gameSigid，而不是  gameid；</strong></u></span></p><pre data-key="603486cb4cc5830001260f66" data-type="code-wrapper"><code data-key="thoughts-1752793" data-type="code-block">   /**</code><code data-key="thoughts-1752794" data-type="code-block">         * 初始化</code><code data-key="thoughts-1752795" data-type="code-block">         * @param context 上下文</code><code data-key="thoughts-1752796" data-type="code-block">         * @param gameid  找平台申请id</code><code data-key="thoughts-1752797" data-type="code-block">         * @param dxAppid  平台申请id</code><code data-key="thoughts-1752798" data-type="code-block">         */</code><code data-key="thoughts-1752799" data-type="code-block">		String gameSigid = GameSigIdUtils.sigGameID(this, gameid);</code><code data-key="thoughts-1752800" data-type="code-block">		Game3367SDK.getInstance().init(this, gameSigid, dxAppid);</code><code data-key="thoughts-1752801" data-type="code-block"></code><code data-key="thoughts-1752802" data-type="code-block"></code></pre><p data-key="603486cb4cc5830001260f68" data-type="paragraph"></p><h3 data-key="603486cb4cc5830001260f6a" data-type="header-three">2.<strong><span style="color: #24292E"> 事件监听--登出（</span></strong><span style="color: #fa8c15"><strong>切换帐号，退出的登录，用户异常登录</strong></span><span style="color: #24292E"><strong>）</strong></span></h3><pre data-key="603486cb4cc5830001260f6c" data-type="code-wrapper"><code data-key="thoughts-1752803" data-type="code-block">    /**</code><code data-key="thoughts-1752804" data-type="code-block">     * User 登出监听------(必接)</code><code data-key="thoughts-1752805" data-type="code-block">     */</code><code data-key="thoughts-1752806" data-type="code-block">    Game3367SDK.getInstance().setSDKLogoutListener(this, new GameSDKLogoutListener() {</code><code data-key="thoughts-1752807" data-type="code-block">        @Override</code><code data-key="thoughts-1752808" data-type="code-block">        public void onOut() {</code><code data-key="thoughts-1752809" data-type="code-block">           </code><code data-key="thoughts-1752810" data-type="code-block">            //这里实现游戏的用户登出代码，回到刚开始进游戏的那个游戏登录的背景，然后再弹出登录框</code><code data-key="thoughts-1752811" data-type="code-block">        }</code><code data-key="thoughts-1752812" data-type="code-block">    };</code><code data-key="thoughts-1752813" data-type="code-block"> </code></pre><p data-key="603486cb4cc5830001260f6e" data-type="paragraph"><span style="color: #24292E"> </span></p><h3 data-key="603486cb4cc5830001260f70" data-type="header-three"><strong><span style="color: #24292E">3 .事件监听--登录</span></strong></h3><p data-key="603486cb4cc5830001260f72" data-type="paragraph"></p><pre data-key="603486cb4cc5830001260f74" data-type="code-wrapper"><code data-key="thoughts-1752814" data-type="code-block">    //登录</code><code data-key="thoughts-1752815" data-type="code-block">    private void doLoginUnView() {</code><code data-key="thoughts-1752816" data-type="code-block">        Game3367SDK.getInstance().doLogin(this, new GameSDKLoginListener() {</code><code data-key="thoughts-1752817" data-type="code-block">            @Override</code><code data-key="thoughts-1752818" data-type="code-block">            public void onLoginCancel(String code) {</code><code data-key="thoughts-1752819" data-type="code-block">            }</code><code data-key="thoughts-1752820" data-type="code-block"> </code><code data-key="thoughts-1752821" data-type="code-block">            @Override</code><code data-key="thoughts-1752822" data-type="code-block">            public void onLoginError(Object code) {</code><code data-key="thoughts-1752823" data-type="code-block">            }</code><code data-key="thoughts-1752824" data-type="code-block"> </code><code data-key="thoughts-1752825" data-type="code-block">            @Override</code><code data-key="thoughts-1752826" data-type="code-block">            public void onLoginComplete(UserBean userBean, String code) {</code><code data-key="thoughts-1752827" data-type="code-block">            //用户唯一标识符</code><code data-key="thoughts-1752828" data-type="code-block">             userBean.getUserName();</code><code data-key="thoughts-1752829" data-type="code-block">             //登录校验所需token</code><code data-key="thoughts-1752830" data-type="code-block">             TokenDataUtils.getInstance().get();</code><code data-key="thoughts-1752831" data-type="code-block">			//game_id 游戏真实id</code><code data-key="thoughts-1752832" data-type="code-block">			GameSigIdUtils.sigGameID(context, gameid)</code><code data-key="thoughts-1752833" data-type="code-block"></code><code data-key="thoughts-1752834" data-type="code-block">            }</code><code data-key="thoughts-1752835" data-type="code-block">        });</code><code data-key="thoughts-1752836" data-type="code-block">    }</code></pre><h3 data-key="603486cb4cc5830001260f76" data-type="header-three"></h3><h3 data-key="603486cb4cc5830001260f78" data-type="header-three"><strong><span style="color: #24292E">4 退出帐号-&gt;下次进入-&gt;显示登录框</span></strong></h3><pre data-key="603486cb4cc5830001260f7a" data-type="code-wrapper"><code data-key="thoughts-1752837" data-type="code-block">  Game3367SDK.getInstance().doSwitchAccount(true);</code></pre><h3 data-key="603486cb4cc5830001260f7c" data-type="header-three">5<strong><span style="color: #24292E">. 退出帐号-&gt;下次进入-&gt;不显示登录框</span></strong></h3><pre data-key="603486cb4cc5830001260f7e" data-type="code-wrapper"><code data-key="thoughts-1752838" data-type="code-block">  Game3367SDK.getInstance().doSwitchAccount(false);</code></pre><h3 data-key="603486cb4cc5830001260f80" data-type="header-three"><strong><span style="color: #24292E">6. 提交角色信息</span></strong></h3><p data-key="603486cb4cc5830001260f82" data-type="paragraph"><span style="color: #fa8c15">*</span><span style="background: #F6F8FA"><span style="color: #fa8c15"> 只有提交了角色信息，才可以支付</span></span></p><pre data-key="603486cb4cc5830001260f84" data-type="code-wrapper"><code data-key="thoughts-1752839" data-type="code-block">    /**</code><code data-key="thoughts-1752840" data-type="code-block">     * 提交用户数据</code><code data-key="thoughts-1752841" data-type="code-block">     *</code><code data-key="thoughts-1752842" data-type="code-block">     * @param areaid   区服id</code><code data-key="thoughts-1752843" data-type="code-block">     * @param roleid   角色id</code><code data-key="thoughts-1752844" data-type="code-block">     * @param level    角色级别</code><code data-key="thoughts-1752845" data-type="code-block">     * @param rolename //角色名称</code><code data-key="thoughts-1752846" data-type="code-block">     */</code><code data-key="thoughts-1752847" data-type="code-block">    private void submitUserData(String areaid, String roleid, int level, String rolename) {</code><code data-key="thoughts-1752848" data-type="code-block">        UserOtherDate userDate = new UserOtherDate();</code><code data-key="thoughts-1752849" data-type="code-block">            userDate.setAreaId(areaid);//必传</code><code data-key="thoughts-1752850" data-type="code-block">            userDate.setRoleId(roleid);//必传</code><code data-key="thoughts-1752851" data-type="code-block">            //  -------------</code><code data-key="thoughts-1752852" data-type="code-block">            userDate.setRoleLevel(level);//等级必传</code><code data-key="thoughts-1752853" data-type="code-block">            userDate.setRoleName(rolename);//角色名字必传</code><code data-key="thoughts-1752854" data-type="code-block">            Game3367SDK.submitUserData(userDate, new GameListener() {</code><code data-key="thoughts-1752855" data-type="code-block">                @Override</code><code data-key="thoughts-1752856" data-type="code-block">                public void onSuccess(int code, Object response) {</code><code data-key="thoughts-1752857" data-type="code-block">                    Log.d("submitUserData", "提交角色信息成功");</code><code data-key="thoughts-1752858" data-type="code-block">                }</code><code data-key="thoughts-1752859" data-type="code-block"> </code><code data-key="thoughts-1752860" data-type="code-block">                @Override</code><code data-key="thoughts-1752861" data-type="code-block">                public void onStart(int code) {</code><code data-key="thoughts-1752862" data-type="code-block">                }</code><code data-key="thoughts-1752863" data-type="code-block"> </code><code data-key="thoughts-1752864" data-type="code-block">                @Override</code><code data-key="thoughts-1752865" data-type="code-block">                public void onFailure(int code) {</code><code data-key="thoughts-1752866" data-type="code-block">                }</code><code data-key="thoughts-1752867" data-type="code-block"> </code><code data-key="thoughts-1752868" data-type="code-block">                @Override</code><code data-key="thoughts-1752869" data-type="code-block">                public void onError(String code) {</code><code data-key="thoughts-1752870" data-type="code-block">                    Log.d("submitUserData", "提交角色信息失败");</code><code data-key="thoughts-1752871" data-type="code-block">                }</code><code data-key="thoughts-1752872" data-type="code-block"> </code><code data-key="thoughts-1752873" data-type="code-block">                @Override</code><code data-key="thoughts-1752874" data-type="code-block">                public void onCancel(int code) {</code><code data-key="thoughts-1752875" data-type="code-block"> </code><code data-key="thoughts-1752876" data-type="code-block">                }</code><code data-key="thoughts-1752877" data-type="code-block">            });</code><code data-key="thoughts-1752878" data-type="code-block">        }</code><code data-key="thoughts-1752879" data-type="code-block">}</code></pre><h3 data-key="603486cb4cc5830001260f86" data-type="header-three"><strong><span style="color: #24292E">7. 支付</span></strong></h3><pre data-key="603486cb4cc5830001260f88" data-type="code-wrapper"><code data-key="thoughts-1752880" data-type="code-block">      /**</code><code data-key="thoughts-1752881" data-type="code-block">         * @param pid      商品 id（必填）</code><code data-key="thoughts-1752882" data-type="code-block">         * @param roleID   游戏角色（必填）</code><code data-key="thoughts-1752883" data-type="code-block">         * @param areaId   区服id（必填）</code><code data-key="thoughts-1752884" data-type="code-block">         * @param tmoney   总费用（RMB）必填</code><code data-key="thoughts-1752885" data-type="code-block">         * @param roleName 角色名称（必填）</code><code data-key="thoughts-1752886" data-type="code-block">         * @param  gameorder 订单号（必填）</code><code data-key="thoughts-1752887" data-type="code-block">         */</code><code data-key="thoughts-1752888" data-type="code-block">        PayOrder payOrder = new PayOrder(pid, roleId, areaId, new BigDecimal(tmoney), roleName, gameorder);</code><code data-key="thoughts-1752889" data-type="code-block">        payOrder.setPname(shopName);</code><code data-key="thoughts-1752890" data-type="code-block">        payOrder.setPdesc("shopvalue");</code><code data-key="thoughts-1752891" data-type="code-block">        // 角色等级</code><code data-key="thoughts-1752892" data-type="code-block">        payOrder.setReleLevel(level);</code><code data-key="thoughts-1752893" data-type="code-block">        Game3367SDK.getInstance().doPay(MainActivity.this, payOrder, new PayListener() {</code><code data-key="thoughts-1752894" data-type="code-block"> </code><code data-key="thoughts-1752895" data-type="code-block">            @Override</code><code data-key="thoughts-1752896" data-type="code-block">            public void onPaySuccess(int code, String msg) {</code><code data-key="thoughts-1752897" data-type="code-block">            }</code><code data-key="thoughts-1752898" data-type="code-block"> </code><code data-key="thoughts-1752899" data-type="code-block">            @Override</code><code data-key="thoughts-1752900" data-type="code-block">            public void onPayFailure(int code, String msg) {</code><code data-key="thoughts-1752901" data-type="code-block">            }</code><code data-key="thoughts-1752902" data-type="code-block"> </code><code data-key="thoughts-1752903" data-type="code-block">            @Override</code><code data-key="thoughts-1752904" data-type="code-block">            public void onPayCancel(int code) {</code><code data-key="thoughts-1752905" data-type="code-block">             </code><code data-key="thoughts-1752906" data-type="code-block">            }</code><code data-key="thoughts-1752907" data-type="code-block"> </code><code data-key="thoughts-1752908" data-type="code-block">            @Override</code><code data-key="thoughts-1752909" data-type="code-block">            public void onPayonError(String code, String msg) {</code><code data-key="thoughts-1752910" data-type="code-block">            </code><code data-key="thoughts-1752911" data-type="code-block">            }</code><code data-key="thoughts-1752912" data-type="code-block">        });</code></pre><h3 data-key="603486cb4cc5830001260f8a" data-type="header-three"><strong><span style="color: #24292E">8. 进入游戏必接</span></strong></h3><pre data-key="603486cb4cc5830001260f8c" data-type="code-wrapper"><code data-key="thoughts-1752913" data-type="code-block">//进入游戏</code><code data-key="thoughts-1752914" data-type="code-block">public void enterServer(String roleData) {</code><code data-key="thoughts-1752915" data-type="code-block">    /**</code><code data-key="thoughts-1752916" data-type="code-block">     * @param areaid   String 区服id</code><code data-key="thoughts-1752917" data-type="code-block">     * @param serverid  String 服务器id/大区id</code><code data-key="thoughts-1752918" data-type="code-block">     * @param roleid    String 角色id</code><code data-key="thoughts-1752919" data-type="code-block">     * @param rolelevel int 角色等级</code><code data-key="thoughts-1752920" data-type="code-block">     * @param rolename  String 角色名字</code><code data-key="thoughts-1752921" data-type="code-block">     */</code><code data-key="thoughts-1752922" data-type="code-block">    Game3367SDK.getInstance().enterGame(new EnterGameUser(roleInfo.serverId, "", roleInfo.role_id, Integer.parseInt(roleInfo.level), roleInfo.role_name));</code><code data-key="thoughts-1752923" data-type="code-block">}</code></pre><p data-key="603486cb4cc5830001260f8e" data-type="paragraph"></p><h3 data-key="603486cb4cc5830001260f90" data-type="header-three">9.<strong><span style="color: #6A737D">生命周期设定</span></strong></h3><p data-key="603486cb4cc5830001260f92" data-type="paragraph"><span style="color: #333333"><span style="background: #F6F8FA"> </span></span></p><pre data-key="603486cb4cc5830001260f94" data-type="code-wrapper"><code data-key="thoughts-1752924" data-type="code-block">  @Override</code><code data-key="thoughts-1752925" data-type="code-block">    protected void onDestroy() {</code><code data-key="thoughts-1752926" data-type="code-block">        super.onDestroy();</code><code data-key="thoughts-1752927" data-type="code-block">        /**</code><code data-key="thoughts-1752928" data-type="code-block">         * 必选</code><code data-key="thoughts-1752929" data-type="code-block">         */</code><code data-key="thoughts-1752930" data-type="code-block">        Game3367SDK.getInstance().SDKLift().onDestroy(this);</code><code data-key="thoughts-1752931" data-type="code-block">    }</code><code data-key="thoughts-1752932" data-type="code-block">    </code><code data-key="thoughts-1752933" data-type="code-block">   @Override</code><code data-key="thoughts-1752934" data-type="code-block">    protected void onResume() {</code><code data-key="thoughts-1752935" data-type="code-block">        super.onResume();</code><code data-key="thoughts-1752936" data-type="code-block">        /**</code><code data-key="thoughts-1752937" data-type="code-block">         * 必选</code><code data-key="thoughts-1752938" data-type="code-block">         */</code><code data-key="thoughts-1752939" data-type="code-block">        Game3367SDK.getInstance().SDKLift().onResume(this);</code><code data-key="thoughts-1752940" data-type="code-block">    }</code><code data-key="thoughts-1752941" data-type="code-block"> </code><code data-key="thoughts-1752942" data-type="code-block">    @Override</code><code data-key="thoughts-1752943" data-type="code-block">    protected void onPause() {</code><code data-key="thoughts-1752944" data-type="code-block">        super.onPause();</code><code data-key="thoughts-1752945" data-type="code-block">        /**</code><code data-key="thoughts-1752946" data-type="code-block">         * 必选</code><code data-key="thoughts-1752947" data-type="code-block">         */</code><code data-key="thoughts-1752948" data-type="code-block">        Game3367SDK.getInstance().SDKLift().onPause(this);</code><code data-key="thoughts-1752949" data-type="code-block">    }</code><code data-key="thoughts-1752950" data-type="code-block"> </code><code data-key="thoughts-1752951" data-type="code-block">    @Override</code><code data-key="thoughts-1752952" data-type="code-block">    public void onConfigurationChanged</code><code data-key="thoughts-1752953" data-type="code-block">            (Configuration</code><code data-key="thoughts-1752954" data-type="code-block">                     newConfig) {</code><code data-key="thoughts-1752955" data-type="code-block">        super.onConfigurationChanged(newConfig);</code><code data-key="thoughts-1752956" data-type="code-block">        /**</code><code data-key="thoughts-1752957" data-type="code-block">         * 必选</code><code data-key="thoughts-1752958" data-type="code-block">         */</code><code data-key="thoughts-1752959" data-type="code-block">        Game3367SDK.getInstance().SDKLift().onConfigurationChanged(this, newConfig);</code><code data-key="thoughts-1752960" data-type="code-block">    }</code></pre><p data-key="603486cb4cc5830001260f96" data-type="paragraph"></p><p data-key="60d4225b82c055004a3b13f5" data-type="paragraph"></p></div>
+
+        <footer>
+            <a href="https://thoughts.teambition.com/" target="_blank">Thoughts</a>
+        </footer>
+    
+
+</body></html>

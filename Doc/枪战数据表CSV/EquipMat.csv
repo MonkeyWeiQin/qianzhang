@@ -1,0 +1,8 @@
+装备材料编号,材料名称,图标,模型,掉落有效时间/秒,1-25级敌人掉落机率,26-50级敌人掉落机率,51-75级敌人掉落机率,76-100级敌人掉落机率
+string,string,string,string,int,int,int,int,int
+id,name,icon,model,droptime,probability_1,probability_2,probability_3,probability_4
+equipmat01,初级芯片,equipmat01,equipmat01,600,80,60,40,35
+equipmat02,中级芯片,equipmat02,equipmat02,600,100,80,80,70
+equipmat03,高级芯片,equipmat03,equipmat03,600,0,100,90,88
+equipmat04,特级芯片,equipmat04,equipmat04,600,0,0,100,98
+equipmat05,顶级芯片,equipmat05,equipmat05,600,0,0,0,100

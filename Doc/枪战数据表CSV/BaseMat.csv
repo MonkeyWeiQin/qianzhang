@@ -1,0 +1,9 @@
+基地材料编号,材料名称,图标,模型,掉落有效时间/秒,掉落机率
+string,string,string,string,int,int
+id,name,icon,model,droptime,probability
+basemat01,面包,basemat01,basemat01,240,17
+basemat02,水,basemat02,basemat02,240,34
+basemat03,医疗包,basemat03,basemat03,240,50
+basemat04,木,basemat04,basemat04,240,67
+basemat05,石,basemat05,basemat05,240,84
+basemat06,铁,basemat06,basemat06,240,100
